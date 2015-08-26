@@ -1,0 +1,129 @@
+/* 
+ * ----------------
+ * Template: Germania 2015
+ * Fuer meine liebe Germania 2015
+ * Von : Marc Ernst
+ * Firma : SkyIT Webdesign Darmstadt
+ * Erstellt: 25.7.2015
+ * ----------------
+ * Version 0.5.1
+ * ----------------
+ */
+@import "compass/reset";
+//@import "compass/css3/appearance";
+@import "gridle/gridle";
+
+//@include experimental(appearance, none); // For normal BUttons 
+
+@import "include/variables";
+@import "include/classes";
+@import "include/mediaqueries";
+
+@import "include/shadows";
+
+@import "include/layout";
+@import "include/fonts";
+@import "include/mainmenu";
+@import "include/othermenus";
+@import "include/slider";
+@import "include/fixedelements";
+@import "include/scrollup";
+@import "include/lists";
+@import "include/forms";
+@import "include/gallery";
+
+
+html, body {
+ 
+  height: auto;
+  
+ // background: $gray1;
+//  overflow-x: hidden;
+}
+
+//PDF ICON
+li.csc-uploads-element-pdf:before {
+  content: "\f1c1" !important;
+  margin-left: 0 !important;
+  font-size: 1.1em !important;    
+}
+
+li.csc-uploads-element-pdf span {
+  display: inline;
+}
+
+//FACEBOOK SHIT
+#gerdb a {
+  border-radius: 3px;
+  //background-color: $gray2;
+  position: relative;
+  color: white;
+  left: 0px;
+  padding: 4px 9px 3px 9px;
+//  border: 1px solid $gray1;
+  //width: 160px;
+  transition: all 1s ease, left 0.3s linear;
+}
+
+#gerdb a:hover {
+ // border: 1px solid white;
+  background-color: $lightgray2;
+  color: black;
+  text-decoration: none;
+  //left: 5px;
+}
+#gerdb a i {
+  padding: 0px;
+  transition: all 1s ease;
+}
+#gerdb a:hover i {
+  padding-right: 5px;
+  transform: rotateY(180deg);
+}
+
+.top_left {
+  position: relative;
+}
+
+.fb_iframe_widget {
+  position: absolute !important;
+  top: 0;
+  left: 240px;
+  float: left;  
+}
+
+.fb-like {
+  //display: none;
+  //margin-left: 30px;
+  float: left;
+}
+
+.fb-like > span {
+  vertical-align: text-top !important;
+  position: relative;
+  //top: -1px;
+}
+
+// GRIDLE SETTINGS
+$settings : (
+  context : 12,
+  gutter-width : 20px,
+  direction : ltr );
+  
+@include gridle_setup($settings);
+
+@include gridle_register_state ( mobile , (
+  max-width : 959px,
+  gutter-width : 20px
+) );
+
+// clear each classes :
+@include gridle_register_clear_each(2, left);
+@include gridle_register_clear_each(12, both);
+
+@include gridle_register_column( '5on18' , 5, 18 );
+//@include gridle_register_column( '7on24' , 7, 24 );
+
+// register states :
+
+@include gridle_generate_classes();

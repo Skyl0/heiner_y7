@@ -1,0 +1,43 @@
+/**
+ *   Class Definitions - Reusables
+ */
+
+ .floatl {
+   float: left;
+ }
+ 
+.tacenter, .align-center {
+  text-align: center !important;
+}
+
+.tajustify {
+  text-align: justify;
+}
+
+.hidden {
+display: none !important;
+}
+
+.xtra-70px {
+	margin-bottom: 70px !important;
+}
+
+.clearfix:after {
+    content: ".";
+    clear: both;
+    display: block;
+    visibility: hidden;
+    height: 0px;
+}
+
+.stdmargin-bot {
+  margin-bottom: $stdmargin;
+}
+.stdmargin-top {
+  margin-top: $stdmargin;
+}
+
+.galleryfix {
+  margin-right: 10px !important;
+}
+

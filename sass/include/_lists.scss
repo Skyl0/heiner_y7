@@ -1,0 +1,27 @@
+.content_right {
+ 
+ ul {
+   list-style: outside none none;
+   padding: 10px;
+   background: #DDDDDD; //rgba(100,100,100,0.2);
+ } 
+ 
+ ul li {
+   position: relative;
+   left: 20px;
+   line-height: 30px;
+ }
+ 
+ ul li::before {
+    content: "\f0c8";
+    font-family: "FontAwesome";
+    display: inline-block;
+    color: $weinrot;
+    font-size: 12px;
+    position: relative;
+    bottom: 1px;
+    width: 1.5em;
+    margin-left: -1.5em;
+
+}
+}

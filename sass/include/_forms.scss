@@ -1,0 +1,57 @@
+.csc-mailform {
+  
+  label em {
+    text-transform: none;
+    color: $weinrot;
+    font-size: $smaller;
+    line-height: $small;
+  }
+  
+  .csc-form-element {
+    margin: 0 0 10px 0;
+  }
+  
+  textarea, input[type] {
+    border: 1px solid $weinrot;
+    padding: 5px;
+    font-size: 16px;
+     @include breakpoint(desktop) {width: 65%;}
+      @include breakpoint(phone) {width: 94%;}
+      -webkit-appearance: none;
+  }
+  
+  input[type="submit"] {
+    -webkit-appearance: none;
+    @include breakpoint(desktop) { width: 300px; }
+     @include breakpoint(phone) { width: 94%; }
+    position: relative;
+    @include breakpoint(desktop) {
+      left: 224px;
+    }
+    background: $weinrot;
+    color: $weiss;
+    //font-weight: bold;
+    font-family: "OpenSans", Arial, sans-serif;
+  }
+  
+  label {
+    position: relative;
+  }
+  
+  strong {
+    display: inline-block;
+    padding: 8px;
+    background: $lightgray2;
+    position: relative;
+   // height: 30px;
+    margin-bottom: 5px;
+    top: 3px;
+    //left: 5px;
+    color: $weinrot;
+    font-style: italic;
+    font-size: $smaller; 
+    text-transform: none;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.8);
+  }
+  
+}

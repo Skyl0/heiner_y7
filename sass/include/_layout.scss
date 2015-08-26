@@ -1,0 +1,36 @@
+/*
+ * General Layout
+ */
+
+.container {
+ @include breakpoint(desktop) {
+  width: 960px;
+  }
+  @include breakpoint(phone) {
+	width: 100%;
+  }
+  margin: 0 auto;
+}
+
+/*
+ * Top Landing
+ */
+
+.top {
+  height: $topheight;
+  border-top: $topborder;
+}
+
+/*
+ * Bottom Landing
+ */
+.bottom {
+  background-color: $blau;
+}
+
+/*
+ * Footer Landing
+ */
+.footer {
+  background-color: $blau;
+}

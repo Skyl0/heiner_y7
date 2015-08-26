@@ -1,0 +1,28 @@
+/*
+ * SCROLL UP 
+ */
+
+.footer .container, .bottom .container, .content .container {
+  position: relative;
+}
+
+.scrollup {
+  position: absolute;
+  @include breakpoint(desktop) {  bottom: 40px; }
+  @include breakpoint(phone) { bottom: 80px; }
+  right: 5px;
+  z-index: 100;
+}
+
+.scrollup i {
+  font-size: 5em !important;
+}
+
+.scrollup a {
+    color: $gray1;
+    transition: all 0.5s;
+}
+
+.scrollup a:hover {
+  color: $gray2;
+}
