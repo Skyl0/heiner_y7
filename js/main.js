@@ -284,12 +284,12 @@ jQuery(document).ready(function($)  {
 			$(this).bxSlider({
 			minSlides: 1,
 			maxSlides: 20,
-			moveSlides: 0,
-			easing: 'linear',
-			slideWidth: 150,
-			slideMargin: 3,
+			moveSlides: 1,
+			//easing: 'ease',
+			slideWidth: 133,
+			slideMargin: 0,
 			infiniteLoop: false,
-			hideControlOnEnd: false,
+			hideControlOnEnd: true,
 			preloadImages: 'visible',
 			pager: false,
 			autoHover: false,
@@ -297,7 +297,7 @@ jQuery(document).ready(function($)  {
 			useCSS: false,
 			auto: false,
 			pause: 0,
-			speed: 3000,
+			speed: 1000,
 			randomStart: false
 		});
 		

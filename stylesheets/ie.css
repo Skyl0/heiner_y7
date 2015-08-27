@@ -9,7 +9,7 @@
  * Version 0.5.1
  * ----------------
  */
-/* line 5, ../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -31,45 +31,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
@@ -365,88 +365,30 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 /*
- * Extension
- */
-/* line 61, ../sass/include/_layout.scss */
-.y7-se-images {
-  display: block;
-  width: 400px;
-  padding-right: 10px;
-  float: left;
-}
-
-/* line 68, ../sass/include/_layout.scss */
-.y7-se-item {
-  padding-bottom: 20px !important;
-  border-bottom: 1px solid #262f80;
-  margin-bottom: 20px !important;
-  height: 410px;
-}
-
-/* line 78, ../sass/include/_layout.scss */
-.y7-se-text {
-  display: block;
-  position: relative;
-  width: 210px;
-  float: left;
-  height: 327px;
-}
-
-/* line 86, ../sass/include/_layout.scss */
-.y7-se-text a.more {
-  line-height: 20px;
-  position: absolute;
-  bottom: 0px;
-  left: 0px;
-  width: 100%;
-  display: block;
-  background: #262f80;
-  border: 1px solid #262f80;
-  color: white;
-  padding: 10px;
-  font-size: 1.05em;
-  text-decoration: none;
-  transition: all 0.5s ease;
-}
-
-/* line 102, ../sass/include/_layout.scss */
-.y7-se-text a.more:hover {
-  background: white;
-  color: #262f80;
-}
-
-/* line 107, ../sass/include/_layout.scss */
-.y7-se-item a.more:after {
-  content: " \f105";
-  font-size: 20px;
-  font-family: "FontAwesome";
-}
-
-/*
  * Content
  */
-/* line 116, ../sass/include/_layout.scss */
+/* line 62, ../sass/include/_layout.scss */
 .contmain {
   min-height: 400px;
 }
 
-/* line 120, ../sass/include/_layout.scss */
+/* line 66, ../sass/include/_layout.scss */
 .content {
   padding: 40px 0;
 }
 
-/* line 124, ../sass/include/_layout.scss */
+/* line 70, ../sass/include/_layout.scss */
 .contright {
   background-color: #262f80;
   color: white;
 }
 
-/* line 129, ../sass/include/_layout.scss */
+/* line 75, ../sass/include/_layout.scss */
 .content .grid-3 {
   padding: 0 !important;
 }
 
-/* line 133, ../sass/include/_layout.scss */
+/* line 79, ../sass/include/_layout.scss */
 .contright .csc-default {
   border-bottom: 1px solid white;
   padding: 20px 10px;
@@ -456,7 +398,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /*
  * Bottom Landing
  */
-/* line 142, ../sass/include/_layout.scss */
+/* line 88, ../sass/include/_layout.scss */
 .bottom {
   background-color: #262f80;
   color: white;
@@ -464,12 +406,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   padding: 40px 0;
 }
 
-/* line 149, ../sass/include/_layout.scss */
+/* line 95, ../sass/include/_layout.scss */
 .botmid {
   padding-left: 20px;
 }
 
-/* line 153, ../sass/include/_layout.scss */
+/* line 99, ../sass/include/_layout.scss */
 .logo_bottom {
   height: 87px;
   width: 82px;
@@ -477,7 +419,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   background: url("../images/bottom_heiner.png") no-repeat center center;
 }
 
-/* line 160, ../sass/include/_layout.scss */
+/* line 106, ../sass/include/_layout.scss */
 span.label {
   display: inline-block;
   width: 33%;
@@ -486,7 +428,7 @@ span.label {
 /*
  * Footer Landing
  */
-/* line 167, ../sass/include/_layout.scss */
+/* line 113, ../sass/include/_layout.scss */
 .footer {
   background-color: #262f80;
   color: white;
@@ -494,17 +436,17 @@ span.label {
   padding-bottom: 20px;
 }
 
-/* line 174, ../sass/include/_layout.scss */
+/* line 120, ../sass/include/_layout.scss */
 .footer .container {
   border-top: 1px solid white;
 }
 
-/* line 178, ../sass/include/_layout.scss */
+/* line 124, ../sass/include/_layout.scss */
 .footer div {
   line-height: 40px;
 }
 
-/* line 182, ../sass/include/_layout.scss */
+/* line 128, ../sass/include/_layout.scss */
 .footright {
   text-align: right;
 }
@@ -621,8 +563,92 @@ p {
 }
 
 /*
- * OTHER MENUS
+ * Extension
  */
+/* line 5, ../sass/include/_extension.scss */
+.y7-se-images {
+  display: block;
+  width: 400px;
+  padding-right: 10px;
+  float: left;
+}
+
+/* line 12, ../sass/include/_extension.scss */
+.y7-se-images .bx-wrapper {
+  position: relative;
+}
+
+/* line 15, ../sass/include/_extension.scss */
+.y7-se-item {
+  padding-bottom: 20px !important;
+  border-bottom: 1px solid #262f80;
+  margin-bottom: 20px !important;
+  height: 410px;
+}
+
+/* line 25, ../sass/include/_extension.scss */
+.y7-se-text {
+  display: block;
+  position: relative;
+  width: 210px;
+  float: left;
+  height: 327px;
+}
+
+/* line 33, ../sass/include/_extension.scss */
+.tx-y7-simpleelements a.more {
+  line-height: 20px;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  display: block;
+  background: #262f80;
+  border: 1px solid #262f80;
+  color: white;
+  padding: 10px;
+  font-size: 1.05em;
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+
+/* line 49, ../sass/include/_extension.scss */
+.tx-y7-simpleelements a.back {
+  line-height: 20px;
+  position: absolute;
+  bottom: 0px;
+  left: 10px;
+  width: auto;
+  display: block;
+  background: #262f80;
+  border: 1px solid #262f80;
+  color: white;
+  padding: 10px;
+  font-size: 1.05em;
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+
+/* line 65, ../sass/include/_extension.scss */
+.tx-y7-simpleelements a.more:hover, .tx-y7-simpleelements a.back:hover {
+  background: white;
+  color: #262f80;
+}
+
+/* line 70, ../sass/include/_extension.scss */
+.tx-y7-simpleelements a.more:after {
+  content: " \f105";
+  font-size: 20px;
+  font-family: "FontAwesome";
+}
+
+/* line 76, ../sass/include/_extension.scss */
+.tx-y7-simpleelements a.back:after {
+  content: " \f104";
+  font-size: 20px;
+  font-family: "FontAwesome";
+}
+
 /**
  *   SLIDER OWN DEFINITIONS
  */
@@ -838,73 +864,71 @@ img.img_gt_slider {
 
 /* line 226, ../sass/include/_slider.scss */
 .bx-wrapper .bx-controls-direction a {
-  font-size: 4em;
-  opacity: 0.4;
+  font-size: 5em;
+  opacity: 0.8;
   text-decoration: none !important;
-  color: #fff;
   transition: all 0.5s;
   position: absolute;
+  -webkit-text-stroke: 2px #262f80;
+  color: white;
+  text-shadow: 2px 3px 0 #262f80, -1px -1px 0 #262f80, 1px -1px 0 #262f80, -1px 1px 0 #262f80, 1px 1px 0 #262f80;
 }
-/* line 236, ../sass/include/_slider.scss */
+/* line 243, ../sass/include/_slider.scss */
 .bx-wrapper .bx-prev {
-  left: 30px;
-  text-shadow: 0px 0px 0px #000;
-}
-/* line 240, ../sass/include/_slider.scss */
-.bx-wrapper .bx-next {
-  right: 30px;
-  text-shadow: 0px 0px 0px #000;
-}
-/* line 244, ../sass/include/_slider.scss */
-.bx-wrapper .bx-controls-direction a:hover {
-  opacity: 0.9;
+  left: 5px;
 }
 /* line 247, ../sass/include/_slider.scss */
+.bx-wrapper .bx-next {
+  right: 5px;
+}
+/* line 251, ../sass/include/_slider.scss */
+.bx-wrapper .bx-controls-direction a:hover {
+  opacity: 1;
+}
+/* line 254, ../sass/include/_slider.scss */
 .bx-wrapper .bx-prev:before {
   content: "\f104";
   font-family: "FontAwesome";
 }
-/* line 254, ../sass/include/_slider.scss */
+/* line 261, ../sass/include/_slider.scss */
 .bx-wrapper .bx-next:before {
   content: "\f105";
   font-family: "FontAwesome";
 }
 
-/* line 261, ../sass/include/_slider.scss */
+/* line 268, ../sass/include/_slider.scss */
 .bx-wrapper .bx-prev:hover {
-  left: 35px;
-  text-shadow: 0px 0px 5px #000;
+  left: 15px;
 }
 
-/* line 266, ../sass/include/_slider.scss */
+/* line 273, ../sass/include/_slider.scss */
 .bx-wrapper .bx-next:hover {
-  right: 35px;
-  text-shadow: 0px 0px 5px #000;
+  right: 15px;
 }
 
-/* line 271, ../sass/include/_slider.scss */
+/* line 278, ../sass/include/_slider.scss */
 .bx-wrapper .bx-controls-direction a {
   position: absolute;
   font-family: "FontAwesome";
-  top: 42px;
+  top: 20px;
   margin-top: -16px;
   outline: 0;
   height: 4.0em;
   z-index: 9999;
 }
 
-/* line 284, ../sass/include/_slider.scss */
+/* line 291, ../sass/include/_slider.scss */
 .bx-wrapper .bx-controls-direction a.disabled {
   display: none;
 }
 
 /* AUTO CONTROLS (START / STOP) */
-/* line 290, ../sass/include/_slider.scss */
+/* line 297, ../sass/include/_slider.scss */
 .bx-wrapper .bx-controls-auto {
   text-align: center;
 }
 
-/* line 294, ../sass/include/_slider.scss */
+/* line 301, ../sass/include/_slider.scss */
 .bx-wrapper .bx-controls-auto .bx-start {
   display: block;
   text-indent: -9999px;
@@ -915,13 +939,13 @@ img.img_gt_slider {
   margin: 0 3px;
 }
 
-/* line 304, ../sass/include/_slider.scss */
+/* line 311, ../sass/include/_slider.scss */
 .bx-wrapper .bx-controls-auto .bx-start:hover,
 .bx-wrapper .bx-controls-auto .bx-start.active {
   background-position: -86px 0;
 }
 
-/* line 309, ../sass/include/_slider.scss */
+/* line 316, ../sass/include/_slider.scss */
 .bx-wrapper .bx-controls-auto .bx-stop {
   display: block;
   text-indent: -9999px;
@@ -932,27 +956,27 @@ img.img_gt_slider {
   margin: 0 3px;
 }
 
-/* line 319, ../sass/include/_slider.scss */
+/* line 326, ../sass/include/_slider.scss */
 .bx-wrapper .bx-controls-auto .bx-stop:hover,
 .bx-wrapper .bx-controls-auto .bx-stop.active {
   background-position: -86px -33px;
 }
 
 /* PAGER WITH AUTO-CONTROLS HYBRID LAYOUT */
-/* line 326, ../sass/include/_slider.scss */
+/* line 333, ../sass/include/_slider.scss */
 .bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-pager {
   text-align: left;
   width: 80%;
 }
 
-/* line 331, ../sass/include/_slider.scss */
+/* line 338, ../sass/include/_slider.scss */
 .bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-controls-auto {
   right: 0;
   width: 35px;
 }
 
 /* IMAGE CAPTIONS */
-/* line 338, ../sass/include/_slider.scss */
+/* line 345, ../sass/include/_slider.scss */
 .bx-wrapper .bx-caption {
   position: absolute;
   bottom: 0;
@@ -962,7 +986,7 @@ img.img_gt_slider {
   width: 100%;
 }
 
-/* line 347, ../sass/include/_slider.scss */
+/* line 354, ../sass/include/_slider.scss */
 .bx-wrapper .bx-caption span {
   color: #fff;
   font-family: Arial;

@@ -1,0 +1,80 @@
+/*
+ * Extension
+ */
+
+.y7-se-images {
+  display: block;
+  width: 400px;
+  padding-right: 10px;
+  float: left;
+}
+
+.y7-se-images .bx-wrapper {
+  position: relative;
+}
+.y7-se-item {
+//  position: relative;
+
+padding-bottom: 20px !important;
+border-bottom: 1px solid $blau;
+margin-bottom: 20px !important;
+height: 410px;
+}
+
+
+.y7-se-text {
+  display: block;
+  position: relative;
+  width: 210px;
+  float: left;
+  height: 327px;
+}
+
+.tx-y7-simpleelements a.more {
+  line-height: 20px;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  display: block;
+  background: $blau;
+  border: 1px solid $blau;
+  color: white;
+  padding: 10px;
+  font-size: $big;
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+
+.tx-y7-simpleelements a.back {
+  line-height: 20px;
+  position: absolute;
+  bottom: 0px;
+  left: 10px;
+  width: auto;
+  display: block;
+  background: $blau;
+  border: 1px solid $blau;
+  color: white;
+  padding: 10px;
+  font-size: $big;
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+
+.tx-y7-simpleelements a.more:hover, .tx-y7-simpleelements a.back:hover {
+  background: white;
+  color: $blau;
+}
+
+.tx-y7-simpleelements a.more:after {
+ content: " \f105";
+ font-size: 20px;
+ font-family: "FontAwesome"; 
+}
+
+.tx-y7-simpleelements a.back:after {
+  content: " \f104";
+ font-size: 20px;
+ font-family: "FontAwesome"; 
+}

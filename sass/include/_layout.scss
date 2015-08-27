@@ -54,61 +54,7 @@
   background-size: cover;
   background-position: bottom center;
 }
-/*
- * Extension
- */
 
-.y7-se-images {
-  display: block;
-  width: 400px;
-  padding-right: 10px;
-  float: left;
-}
-
-.y7-se-item {
-//  position: relative;
-
-padding-bottom: 20px !important;
-border-bottom: 1px solid $blau;
-margin-bottom: 20px !important;
-height: 410px;
-}
-
-
-.y7-se-text {
-  display: block;
-  position: relative;
-  width: 210px;
-  float: left;
-  height: 327px;
-}
-
-.y7-se-text a.more {
-  line-height: 20px;
-  position: absolute;
-  bottom: 0px;
-  left: 0px;
-  width: 100%;
-  display: block;
-  background: $blau;
-  border: 1px solid $blau;
-  color: white;
-  padding: 10px;
-  font-size: $big;
-  text-decoration: none;
-  transition: all 0.5s ease;
-}
-
-.y7-se-text a.more:hover {
-  background: white;
-  color: $blau;
-}
-
-.y7-se-item a.more:after {
- content: " \f105";
- font-size: 20px;
- font-family: "FontAwesome"; 
-}
 /*
  * Content
  */
