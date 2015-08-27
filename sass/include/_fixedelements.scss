@@ -1,6 +1,6 @@
-/**
+/*
  *   Fixed Menu and Slider
- */
+ 
 
 body.scrollfixed .menu {
   position: fixed;
@@ -17,27 +17,9 @@ body.scrollfixed .slider {
   top: $menuheight;
 }
 
-body.scrollfixed .titlebar {
-  position: relative;
-  width: 100%;
-  top: $menuheight;
-}
-
-body.scrollfixed .imagebar {
- // display: block;
-  width: 100%;
-  position: relative;
-  top: 0px;
-}
-
-body.scrollfixed .zirkel {
-  display: block;
-  width: 100%;
-  position: relative;
-  top: $menuheight;
-}
 
 body.scrollfixed .footer {
   position: relative;
   top: $menuheight;
 }
+*/

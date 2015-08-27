@@ -161,7 +161,7 @@ jQuery(document).ready(function($)  {
     }
 
      
-    $(document).scroll( function() { checkScrollPosition(); });	
+  //  $(document).scroll( function() { checkScrollPosition(); });	
     //$(document).resize( function() { checkScrollPosition(); });	
 
 	/*
@@ -277,27 +277,30 @@ jQuery(document).ready(function($)  {
 	}
 	
 
-$(".imagebar .imgslider a:has(> img)").addClass('ger_gallery');
-	$('.imagebar .imgslider a.ger_gallery').unwrap().unwrap().unwrap().unwrap().unwrap();
-	$('.imagebar .imgslider a.ger_gallery').wrap('<div class="imgslidewrap"></div>');
+		var seslider = $('.y7-se-slider');
 		
-		$('.imagebar .imgslider').bxSlider({
+		seslider.each(function(index) {
+			
+			$(this).bxSlider({
 			minSlides: 1,
-			maxSlides: 13,
-			moveSlides: 1,
+			maxSlides: 20,
+			moveSlides: 0,
 			easing: 'linear',
 			slideWidth: 150,
 			slideMargin: 3,
-			infiniteLoop: true,
-			hideControlOnEnd: true,
+			infiniteLoop: false,
+			hideControlOnEnd: false,
 			preloadImages: 'visible',
-			pager:false,
+			pager: false,
 			autoHover: false,
-			controls: false,
+			controls: true,
 			useCSS: false,
+			auto: false,
 			pause: 0,
 			speed: 3000,
-			randomStart: true
+			randomStart: false
+		});
+		
 		});
 	
 	

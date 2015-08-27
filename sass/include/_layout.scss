@@ -19,18 +19,166 @@
 .top {
   height: $topheight;
   border-top: $topborder;
+  color: $blau;
 }
 
+.logo {
+  height: 87px;
+  width: 283px;
+  display: block;
+  background: url('../images/heiner_top.png') no-repeat center center;
+}
+
+.topleft a {
+  display: block;
+  margin: (($topheight - 87px) / 2) 0;
+}
+
+.social {
+  line-height: 40px;
+  text-align: right;
+  margin: (($topheight - 40px) / 2) 0;
+}
+
+.social i {
+  padding: 0 10px;
+}
+
+/**
+ *   Slider 
+ */
+
+.slider {
+  height: $sliderheight;
+  background: url('../images/zirkel.jpg');
+  background-size: cover;
+  background-position: bottom center;
+}
+/*
+ * Extension
+ */
+
+.y7-se-images {
+  display: block;
+  width: 400px;
+  padding-right: 10px;
+  float: left;
+}
+
+.y7-se-item {
+//  position: relative;
+
+padding-bottom: 20px !important;
+border-bottom: 1px solid $blau;
+margin-bottom: 20px !important;
+height: 410px;
+}
+
+
+.y7-se-text {
+  display: block;
+  position: relative;
+  width: 210px;
+  float: left;
+  height: 327px;
+}
+
+.y7-se-text a.more {
+  line-height: 20px;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  display: block;
+  background: $blau;
+  border: 1px solid $blau;
+  color: white;
+  padding: 10px;
+  font-size: $big;
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+
+.y7-se-text a.more:hover {
+  background: white;
+  color: $blau;
+}
+
+.y7-se-item a.more:after {
+ content: " \f105";
+ font-size: 20px;
+ font-family: "FontAwesome"; 
+}
+/*
+ * Content
+ */
+
+.contmain {
+  min-height: 400px;
+}
+
+.content {
+  padding: 40px 0;
+}
+
+.contright {
+  background-color: $blau;
+  color: white;
+}
+
+.content .grid-3 {
+  padding: 0 !important;
+}
+.contright {
+  .csc-default {
+    border-bottom: 1px solid white;
+    padding: 20px 10px;
+    margin: 0;
+  }
+}
 /*
  * Bottom Landing
  */
 .bottom {
   background-color: $blau;
+  color: white;
+  font-size: $small;
+  padding: 40px 0;
 }
 
+.botmid {
+  padding-left: $stdmargin;
+}
+
+.logo_bottom {
+  height: 87px;
+  width: 82px;
+  display: block;
+  background: url('../images/bottom_heiner.png') no-repeat center center;
+}
+
+span.label {
+  display: inline-block;
+  width: 33%;
+}
 /*
  * Footer Landing
  */
 .footer {
   background-color: $blau;
+  color: white;
+  font-size: $small;
+  padding-bottom: 20px;
+}
+
+.footer .container {
+  border-top: 1px solid white;
+} 
+
+.footer div {
+  line-height: 40px;
+}
+
+.footright {
+  text-align: right;
 }
