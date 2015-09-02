@@ -20,6 +20,9 @@
   height: $topheight;
   border-top: $topborder;
   color: $blau;
+  box-shadow: 0px 0px 5px #000;
+  z-index: 999;
+position: relative;
 }
 
 .logo {
@@ -38,10 +41,34 @@
   line-height: 40px;
   text-align: right;
   margin: (($topheight - 40px) / 2) 0;
+  cursor: pointer;
+}
+.social {
+  iframe {
+    width: auto !important;
+  }
 }
 
 .social i {
   padding: 0 10px;
+}
+
+@media (max-width: 600px) {
+  .social {
+    visibility: hidden;
+  }
+}
+.socialbar .container {
+  height: 30px;
+  lineheight: 30px;
+  display: none;
+}
+
+.sharelinks {
+  display:inline-block;
+  height: 30px;
+  width: 25%;
+  float: left;
 }
 
 /**
@@ -49,10 +76,11 @@
  */
 
 .slider {
-  height: $sliderheight;
-  background: url('../images/zirkel.jpg');
+  @include breakpoint(desktop) { height: $sliderheight; }
+   @include breakpoint(phone) { height: 350px; }
+ /* background: url('../images/zirkel.jpg');
   background-size: cover;
-  background-position: bottom center;
+  background-position: bottom center; */
 }
 
 /*
@@ -72,16 +100,59 @@
   color: white;
 }
 
+ @include breakpoint(phone) {
+  .push-1 {
+    left: 0% !important;
+  } 
+ }
+
 .content .grid-3 {
   padding: 0 !important;
 }
 .contright {
-  .csc-default {
-    border-bottom: 1px solid white;
+   @include breakpoint(phone) { 
+     position: relative;
+     top: 10px;
+   }
+}
+
+.contright > div {
+  border-bottom: 1px solid white;
     padding: 20px 10px;
     margin: 0;
-  }
+    
+   @include breakpoint(phone) {
+     border-right: 10px solid white;
+     border-left: 10px solid white;
+   }
 }
+
+.contright {
+   @include breakpoint(phone) {
+    margin: $stdmargin 0 0 0 ;
+   }
+   
+}
+
+.contright a {
+  color: white;
+  position: relative;
+  top: 10px;
+  margin-bottom: 10px;
+  text-decoration: none;
+  font-family:"open_sansbold";
+}
+
+.contright a:hover {
+  color: #ccc;
+}
+
+.contright a:after {
+ content: " \f105";
+ font-size: 20px;
+ font-family: "FontAwesome"; 
+}
+
 /*
  * Bottom Landing
  */
@@ -94,6 +165,12 @@
 
 .botmid {
   padding-left: $stdmargin;
+}
+
+.botleft, .botmid {
+   @include breakpoint(phone) {
+     margin: 0 0 20px 0 ;
+   }
 }
 
 .logo_bottom {

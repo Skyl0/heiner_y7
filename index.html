@@ -10,17 +10,34 @@
   <![endif]-->
 </head>
 <body class="bautraeger">
-###LOAD_FIRST###
 <!-- ###DOCUMENT### Begin -->
+	<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/de_DE/sdk.js#xfbml=1&version=v2.4&appId=103856201164";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+###LOAD_FIRST###
+<div class="socialbar"><div class="container">###SHARELINKS###</div></div>
 <div class="top">
 	<div class="container">
-		<div class="topleft grid-6"><!-- ###TOPLEFT### Begin -->
+		<div class="topleft grid-9 grid-mobile-6"><!-- ###TOPLEFT### Begin -->
 			<a href="/"><div class="logo"></div></a>
 		<!-- ###TOPLEFT### --></div>
-		<div class="topright grid-6"><!-- ###TOPRIGHT### -->
+		<div class="topright grid-3 grid-mobile-4"><!-- ###TOPRIGHT### -->
 			<div class="social">
 				<i class="fa fa-facebook"></i><i class="fa fa-twitter"></i><i class="fa fa-google-plus"></i><i class="fa fa-xing"></i>
-			</div><!-- ###TOPRIGHT### --></div>
+			</div><!-- ###TOPRIGHT### -->
+		</div>
+		<div class="respo grid-mobile-2">
+			<div class="burger">
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+		</div>
 	</div>
 </div>
 <div class="menu">
@@ -38,26 +55,28 @@
 	<!-- ###MAINMENU### --></div>
 </div>
 <div class="slider">
-	###SLIDER###
+	<div class="bxslider"><!-- ###SLIDER### -->
+		<!-- ###SLIDER### --></div>
 </div>
 <div class="content">
 	<div class="container">
-		<div class="contmain grid-8">###CONTENT###</div>
-		<div class="contright grid-3 push-1">###CONTENTRIGHT###</div>
+		<div class="contmain grid-8 grid-mobile-12">###CONTENT###</div>
+		<div class="contright grid-3 push-1 grid-mobile-12">###CONTENTRIGHT###</div>
 	</div>
 </div>
 <div class="bottom">
 	<div class="container">
-		<div class="botleft grid-2"><!-- ###BOTTOMLEFT### -->
+		<div class="scrollup"><a href="#top"><i class="fa fa-chevron-up"></i></a></div>
+		<div class="botleft grid-2 grid-mobile-12"><!-- ###BOTTOMLEFT### -->
 			<div class="logo_bottom"></div>
 		<!-- ###BOTTOMLEFT### --></div>
-		<div class="botmid grid-5"><!-- ###BOTTOMMID### -->
+		<div class="botmid grid-5 grid-mobile-12"><!-- ###BOTTOMMID### -->
 			<p><b>Heiner Immobilien und Grundbesitz GmbH</b><br/>
 				Eberst&auml;dter Straße 23<br/>
 				D-64319 Pfungstadt
 			</p>
 		<!-- ###BOTTOMMID### --></div>
-		<div class="botright grid-5"><!-- ###BOTTOMRIGHT### -->
+		<div class="botright grid-5 grid-mobile-12"><!-- ###BOTTOMRIGHT### -->
 			<p>
 				<span class="label">Telefon</span>+49 (0) 162 4041818<br/>
 				<span class="label">E-Mail</span>info@heiner-grundbesitz.de<br/>
@@ -68,10 +87,10 @@
 </div>
 <div class="footer">
 	<div class="container">
-		<div class="footleft grid-6"><!-- ###FOOTERLEFT### -->
+		<div class="footleft grid-6 grid-mobile-12"><!-- ###FOOTERLEFT### -->
 			<i class="fa fa-copyright"></i> 2015 heiner-grundbesitz.de | Powered by Y7 group
 		<!-- ###FOOTERLEFT### --></div>
-		<div class="footright grid-6"><!-- ###FOOTERRIGHT### -->
+		<div class="footright grid-6 grid-mobile-12"><!-- ###FOOTERRIGHT### -->
 			Impressum
 		<!-- ###FOOTERRIGHT### --></div>
 	</div>

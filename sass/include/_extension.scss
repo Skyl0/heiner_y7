@@ -15,19 +15,62 @@
 .y7-se-item {
 //  position: relative;
 
-padding-bottom: 20px !important;
-border-bottom: 1px solid $blau;
-margin-bottom: 20px !important;
-height: 410px;
+//padding-bottom: 20px !important;
+//border-bottom: 1px solid $blau;
+//margin-bottom: 20px !important;
+ @include breakpoint(desktop) {height: 410px;}
 }
+
+.separator {
+  height: 1px;
+  background: $blau;
+  margin: 40px 0 ;
+   @include breakpoint(desktop) {width: 643px;}
+    @include breakpoint(phone) {width: 100%;}
+}
+
 
 
 .y7-se-text {
   display: block;
   position: relative;
-  width: 210px;
+  width: 210px;   
   float: left;
-  height: 327px;
+   height: 327px;
+}
+
+@media (max-width: 675px) {
+  .y7-se-text {
+    width: 100% !important;
+  }
+  
+  .y7-se-images .firstimage {
+    margin-left: -200px;
+    position: relative;
+    left: 50%;
+  }
+  
+  .y7-se-images {
+    width: 100% !important;
+  }
+  
+  .y7-se-detailtext, .y7-se-text {
+   margin-top: 20px;
+   }
+}
+
+@media (max-width: 420px) {
+
+  .y7-se-images .firstimage {
+ //   margin-left: -200px;
+//    position: relative;
+    width: auto;
+  //  left: 50%;
+  }
+}
+
+.y7-se-detail {
+  min-height: 450px;
 }
 
 .tx-y7-simpleelements a.more {
@@ -35,7 +78,8 @@ height: 410px;
   position: absolute;
   bottom: 0px;
   left: 0px;
-  width: 100%;
+   @include breakpoint(desktop) {width: 100%;}
+    @include breakpoint(phone) {width: auto;}
   display: block;
   background: $blau;
   border: 1px solid $blau;
@@ -48,7 +92,8 @@ height: 410px;
 
 .tx-y7-simpleelements a.back {
   line-height: 20px;
-  position: absolute;
+   @include breakpoint(desktop) {position: absolute;}
+    @include breakpoint(phone) {margin: 20px 0; }
   bottom: 0px;
   left: 10px;
   width: auto;

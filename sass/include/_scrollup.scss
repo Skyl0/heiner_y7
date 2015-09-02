@@ -8,21 +8,21 @@
 
 .scrollup {
   position: absolute;
-  @include breakpoint(desktop) {  bottom: 40px; }
-  @include breakpoint(phone) { bottom: 80px; }
-  right: 5px;
+  @include breakpoint(desktop) {  bottom: 0px; right: 0px;}
+  @include breakpoint(phone) { bottom: 0px; right: 10px;}
+  
   z-index: 100;
 }
 
 .scrollup i {
-  font-size: 5em !important;
+  font-size: 3em !important;
 }
 
 .scrollup a {
-    color: $gray1;
+    color: rgba(255,255,255,0.5);
     transition: all 0.5s;
 }
 
 .scrollup a:hover {
-  color: $gray2;
+   color: rgba(255,255,255,0.9);
 }
