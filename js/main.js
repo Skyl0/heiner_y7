@@ -11,7 +11,11 @@
  */
 
 jQuery(document).ready(function($)  {
+	// Landing
 	
+	//$('.linkitem a').unwrap(); //.unwrap();
+	
+	// Höhe
 	var parent = $('html');
 	var celement = $('.content_right');
 	
@@ -29,8 +33,28 @@ jQuery(document).ready(function($)  {
 	
 	// Social Share Part
 	
+	var socialopen = false;
+	
 	$('.social').click(function() {
-		$('.socialbar .container').slideToggle();
+	    if (!socialopen) {
+			$('.socialbar .container').slideDown(500);
+			/*$('.socialbar .container').css({visibility: "visible"});
+			$('.socialbar .container').css({position: "relative"});
+			$('.socialbar .container').css({"zIndex":"500"});
+			$('.socialbar .container').animate({height: "30px"},500); */
+			$('body.scrollfixed .top').animate({top: "30px"},500);
+		//	$('body.scrollfixed .menu').animate({top: "170px"},500);
+			socialopen = true;
+		} else {
+			$('.socialbar .container').slideUp(500);
+			/*$('.socialbar .container').css({visibility: "hidden"});
+			$('.socialbar .container').css({position: "absolute"});
+			$('.socialbar .container').css({"zIndex":"-500"});
+			$('.socialbar .container').animate({height: "0px"},500);*/
+			$('body.scrollfixed .top').animate({top: "0px"},500);
+		//	$('body.scrollfixed .menu').animate({top: "140px"},500);
+			socialopen = false;
+		}
 	});
 	
 	// Burger Menu
@@ -104,27 +128,25 @@ jQuery(document).ready(function($)  {
       * Fixedmenu
       */
      
-        var header = $(".menu");
-        var slider = $(".slider");
-        var zirkel = $(".zirkel");
-        var titlebar = $(".titlebar");
 		var isTouchDevice = 'ontouchstart' in document.documentElement;
      checkScrollPosition();
        
     function checkScrollPosition() {
     	var y = $(document).scrollTop();
     	//console.log("Scroll at Y: " + y);
-	    if (y >= 40 && !isTouchDevice) //  &&  $(window).width() >= 959 ) 
+	    if (y > 0 && !isTouchDevice) //  &&  $(window).width() >= 959 ) 
 	    {	
 	        $('body').addClass('scrollfixed');
+	       
 	    } else {
 	        $('body').removeClass('scrollfixed');
+	     //   $('.menu').css({top: "0px"});
 	    }
 	   
     }
 
      
-  //  $(document).scroll( function() { checkScrollPosition(); });	
+    $(document).scroll( function() { checkScrollPosition(); });	
     //$(document).resize( function() { checkScrollPosition(); });	
 
 	/*
@@ -169,15 +191,22 @@ jQuery(document).ready(function($)  {
 	function resizeImage() {
 		var sliderratio = slider.width() / slider.height();
 		console.log ('SliderRatio: ' + sliderratio);
+		var sliderw = slider.width();
+		
 		
 		img.each(function (index){
-			var imgratio = $(this).actual( 'width' ) / $(this).actual( 'height' );;
-			console.log('ImgRatio('+index+'): ' + imgratio);
-			
+			var imgwidth = $(this).actual( 'width' ) ;
+			var imgratio = imgwidth / $(this).actual( 'height' );;
+		//	console.log('ImgRatio('+index+'): ' + imgratio);
+			var slideroffset = -0.5 * (imgwidth - sliderw);
+			//console.log("Slideroffset" + slideroffset);			
+				
 			if (imgratio > sliderratio) {
-				$(this).addClass("img_gt_slider");
+				$(this).addClass("img_gt_slider");				
+				$(this).css({left: slideroffset});
 			} else {
 				$(this).removeClass("img_gt_slider");
+				$(this).css({left: "0px"});
 			}
 		});	
 		//return true;

@@ -7,6 +7,9 @@
   width: 400px;
   padding-right: 10px;
   float: left;
+  @include breakpoint(phone) {
+    margin-bottom: $stdmargin;
+  }
 }
 
 .y7-se-images .bx-wrapper {
@@ -19,6 +22,10 @@
 //border-bottom: 1px solid $blau;
 //margin-bottom: 20px !important;
  @include breakpoint(desktop) {height: 410px;}
+}
+
+.tx-y7-simpleelements .clearfix::after {
+  @include breakpoint(desktop) { height: 60px !important; }
 }
 
 .separator {
@@ -113,13 +120,15 @@
 }
 
 .tx-y7-simpleelements a.more:after {
- content: " \f105";
+ content: " \f054";
+ position: relative;
+ top: 2px;
  font-size: 20px;
  font-family: "FontAwesome"; 
 }
 
 .tx-y7-simpleelements a.back:after {
-  content: " \f104";
+  content: " \f053";
  font-size: 20px;
  font-family: "FontAwesome"; 
 }

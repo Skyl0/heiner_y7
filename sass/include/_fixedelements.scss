@@ -1,25 +1,55 @@
 /*
  *   Fixed Menu and Slider
- 
+*/ 
 
-body.scrollfixed .menu {
+body.scrollfixed .socialbar {
   position: fixed;
   background-color: white;
   top: 0px;
   width: 100%;
-  z-index: 500;
-  box-shadow: 3px 3px 6px rgba(0,0,0,0.5);
+  z-index: 5000;
+  //box-shadow: 3px 3px 6px rgba(0,0,0,0.5);
+}
+
+body.scrollfixed .top {
+  position: fixed;
+  background-color: white;
+  top: 0px;
+  width: 100%;
+  z-index: 5001;
+  //box-shadow: 3px 3px 6px rgba(0,0,0,0.5);
+}
+
+
+body.scrollfixed .menu {
+  position: fixed;
+  background-color: white;
+  top: 140px;
+  width: 100%;
+  z-index: 5000;
+  //box-shadow: 3px 3px 6px rgba(0,0,0,0.5);
+}
+
+body.scrollfixed .content {
+  position: relative;
+  width: 100%;
+  top: $topheight;
+}
+
+body.scrollfixed .bottom {
+  position: relative;
+  width: 100%;
+  top: $topheight;
 }
 
 body.scrollfixed .slider {
   position: relative;
   width: 100%;
-  top: $menuheight;
+  top: $topheight;
 }
 
 
 body.scrollfixed .footer {
   position: relative;
-  top: $menuheight;
+  top: $topheight;
 }
-*/

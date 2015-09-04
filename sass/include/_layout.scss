@@ -57,18 +57,37 @@ position: relative;
   .social {
     visibility: hidden;
   }
+  
+  .socialbar {
+    display: none;
+  }
 }
+
+
 .socialbar .container {
   height: 30px;
+  //position: absolute;
+  //left: 50%;
+  //margin-left: -25%;
   lineheight: 30px;
+  //visibility: hidden;
+  //z-index: -500;
   display: none;
+  padding-top: 5px;
 }
 
 .sharelinks {
+  text-align: center;
   display:inline-block;
   height: 30px;
   width: 25%;
   float: left;
+}
+
+.menuslider {
+  position: relative;
+  @include breakpoint(desktop) { height: $sliderheight; }
+   @include breakpoint(phone) { height: $slidermobile; }
 }
 
 /**
@@ -77,18 +96,90 @@ position: relative;
 
 .slider {
   @include breakpoint(desktop) { height: $sliderheight; }
-   @include breakpoint(phone) { height: 350px; }
+   @include breakpoint(phone) { height: $slidermobile; }
  /* background: url('../images/zirkel.jpg');
   background-size: cover;
   background-position: bottom center; */
+ position: absolute;
+ top: 0px;
+ width: 100%;
+ transition: height 0.5s;
+}
+
+/* 
+ *  Landing 
+ */
+body.landing {
+ 
+  h1 {
+    font-size: 1.6em !important;
+    font-family:"open_sansbold", Arial, sans-serif !important;
+  }
+  .content {
+    padding: 80px 0 !important;
+  }
+  
+  .contmain  {
+    margin-bottom: 40px;
+  }
+  p.bodytext {
+    text-align:center;
+  }
+  
+  .linkitem p a {
+    display: inline-block;
+    top: -20px;
+    position: relative;
+    width: 200px;
+    padding: 10px;
+    border: 1px solid $blau;
+    background: $blau;
+    color: white;
+    font-size: $bigger;
+    text-decoration: none;
+    font-family: "open_sanssemibold", Arial, sans-serif;
+    transition: all 0.3s;
+  }
+  
+  .linkitem p a:hover  {
+    background-color: white;
+    color: $blau;
+    
+   }
+  
+  .filler {
+    position: absolute;
+    height: 100%;
+    background-color: $blau; 
+  }
 }
 
 /*
  * Content
  */
 
-.contmain {
+.contmain h1 {
+  color: $blau;
+}
+
+.contright h1 {
+  color: white;
+}
+
+body.bautraeger .contmain {
   min-height: 400px;
+}
+
+body.landing .contmain {
+ // min-height: 200px !important;
+}
+
+.linkitem p.bodytext {
+  text-align: center;
+}
+
+body.landing h1 , body.landing .contmain p {
+  text-align: center !important;
 }
 
 .content {
@@ -148,7 +239,9 @@ position: relative;
 }
 
 .contright a:after {
- content: " \f105";
+ content: " \f054";
+ position: relative;
+ top: 2px;
  font-size: 20px;
  font-family: "FontAwesome"; 
 }

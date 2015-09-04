@@ -4,15 +4,43 @@
 
 // Just Menu
   .menu {
-   
-     @include breakpoint(desktop) { display: block;  background: rgba(38,47,128,0.5); } //position: absolute;}
-    @include breakpoint(phone) { display: none;  background: rgba(38,47,128,0.7); }
+   position: relative;
+     @include breakpoint(desktop) { display: block; } //position: absolute;}
+    @include breakpoint(phone) { display: none;  background: rgba(38,47,128,1); }
+    z-index: 9999;
   }
+  
   
   .menu {
     
+    .container {
+           @include breakpoint(desktop) { display: block; background: rgba(38,47,128,0.66); } //position: absolute;}
+           position: relative;
+    }
+    
+    .leftfill {
+      position: absolute;
+      height: $menuheight + 20;
+      display:block;
+      left: -50%;
+      width: 50%;
+      background: rgba(38,47,128,0.66); 
+    }
+    
+    .rightfill {
+      position: absolute;
+      height: $menuheight + 20;
+      display:block;
+      left: 960px;
+      width: 50%;
+      background: rgba(38,47,128,0.66); 
+    }
+    
     
     ul {
+      z-index: 9999;
+      display: block;
+      @include breakpoint(desktop) { background: rgba(38,47,128,0.66);} 
       list-style-type: none;
     }
     ul li {
@@ -21,11 +49,14 @@
     }
     
     ul li a {
+      height:  $menuheight;
+      line-height:  $menuheight;
       display: block;
       padding: 10px;
       text-decoration: none;
       color: white;
-      background: rgba(38,47,128,0);
+      @include breakpoint(phone) {background: rgba(38,47,128,0.66);}
+      @include breakpoint(desktop) {background: rgba(38, 47, 128, 0);}
       transition: all 0.5s;
     }
     

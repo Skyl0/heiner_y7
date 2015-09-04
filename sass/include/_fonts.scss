@@ -92,3 +92,15 @@ h3 {
 p {
   line-height: 150%;
 }
+
+sub {
+  font-size: 0.66em;
+  position:relative;
+  top: 3px;
+}
+
+sup {
+  font-size: 0.66em;
+  position:relative;
+  top: -3px;
+}
