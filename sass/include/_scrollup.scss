@@ -9,7 +9,7 @@
 .scrollup {
   position: absolute;
   @include breakpoint(desktop) {  bottom: 0px; right: 0px;}
-  @include breakpoint(phone) { bottom: 0px; right: 10px;}
+  @include breakpoint(phone) { bottom: 0px; right: 20px;}
   
   z-index: 100;
 }

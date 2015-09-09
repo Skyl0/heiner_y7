@@ -6,7 +6,7 @@
  * Version 0.5.1
  * ----------------
  */
-/* line 5, ../../../Ruby21/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -28,45 +28,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../Ruby21/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../Ruby21/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../Ruby21/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../Ruby21/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../Ruby21/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../Ruby21/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../Ruby21/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../Ruby21/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
@@ -511,52 +511,130 @@ body.landing h1, body.landing .contmain p {
 }
 
 /* line 189, ../sass/include/_layout.scss */
+.content ul {
+  margin: 20px 0;
+}
+
+/* line 193, ../sass/include/_layout.scss */
 .contright {
   background-color: #262f80;
   color: white;
 }
 
 @media (max-width: 959px) {
-  /* line 195, ../sass/include/_layout.scss */
+  /* line 199, ../sass/include/_layout.scss */
   .push-1 {
     left: 0% !important;
   }
 }
-/* line 200, ../sass/include/_layout.scss */
+/* line 204, ../sass/include/_layout.scss */
 .content .grid-3 {
   padding: 0 !important;
 }
 
+/* line 207, ../sass/include/_layout.scss */
+.contright {
+  margin-top: 10px;
+}
 @media (max-width: 959px) {
-  /* line 203, ../sass/include/_layout.scss */
+  /* line 207, ../sass/include/_layout.scss */
   .contright {
     position: relative;
-    top: 10px;
   }
 }
 
-/* line 210, ../sass/include/_layout.scss */
+/* line 215, ../sass/include/_layout.scss */
 .contright > div {
   border-bottom: 1px solid white;
-  padding: 20px 10px;
+  padding: 20px 24px 40px 24px;
   margin: 0;
 }
 @media (max-width: 959px) {
-  /* line 210, ../sass/include/_layout.scss */
+  /* line 215, ../sass/include/_layout.scss */
   .contright > div {
     border-right: 10px solid white;
     border-left: 10px solid white;
   }
 }
 
+/* line 226, ../sass/include/_layout.scss */
+.newsletter input[type="text"] {
+  margin: 20px 0;
+  font-style: italic;
+  color: #aaa;
+  padding: 3px;
+}
+@media (min-width: 960px) {
+  /* line 226, ../sass/include/_layout.scss */
+  .newsletter input[type="text"] {
+    width: 182px;
+  }
+}
 @media (max-width: 959px) {
-  /* line 221, ../sass/include/_layout.scss */
+  /* line 226, ../sass/include/_layout.scss */
+  .newsletter input[type="text"] {
+    width: 75%;
+  }
+}
+
+/* line 234, ../sass/include/_layout.scss */
+.newsletter button.submit {
+  display: inline;
+  font-family: "open_sansbold", Arial, sans-serif;
+  color: white;
+  background-color: #262f80;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+/* line 247, ../sass/include/_layout.scss */
+span.tsubmit {
+  display: none;
+}
+
+/* line 251, ../sass/include/_layout.scss */
+.newsletter button.submit:after {
+  content: " \f054";
+  position: relative;
+  top: 2px;
+  font-size: 20px;
+  font-family: "FontAwesome";
+}
+
+/* line 259, ../sass/include/_layout.scss */
+.slider p a {
+  text-decoration: none;
+  font-family: "open_sansbold", Arial, sans-serif;
+  transition: all 0.3s;
+  border: 1px solid #262f80;
+}
+
+/* line 266, ../sass/include/_layout.scss */
+.slider p a:hover {
+  background-color: white;
+  color: #262f80;
+}
+
+/* line 272, ../sass/include/_layout.scss */
+.slider p a:after {
+  content: " \f054";
+  position: relative;
+  top: 2px;
+  font-size: 20px;
+  font-family: "FontAwesome";
+}
+
+@media (max-width: 959px) {
+  /* line 280, ../sass/include/_layout.scss */
   .contright {
     margin: 20px 0 0 0;
   }
 }
 
-/* line 228, ../sass/include/_layout.scss */
+/* line 287, ../sass/include/_layout.scss */
 .contright a {
   color: white;
   position: relative;
@@ -566,12 +644,12 @@ body.landing h1, body.landing .contmain p {
   font-family: "open_sansbold";
 }
 
-/* line 237, ../sass/include/_layout.scss */
+/* line 296, ../sass/include/_layout.scss */
 .contright a:hover {
   color: #ccc;
 }
 
-/* line 241, ../sass/include/_layout.scss */
+/* line 300, ../sass/include/_layout.scss */
 .contright a:after {
   content: " \f054";
   position: relative;
@@ -583,7 +661,7 @@ body.landing h1, body.landing .contmain p {
 /*
  * Bottom Landing
  */
-/* line 252, ../sass/include/_layout.scss */
+/* line 311, ../sass/include/_layout.scss */
 .bottom {
   background-color: #262f80;
   color: white;
@@ -591,19 +669,19 @@ body.landing h1, body.landing .contmain p {
   padding: 40px 0;
 }
 
-/* line 259, ../sass/include/_layout.scss */
+/* line 318, ../sass/include/_layout.scss */
 .botmid {
   padding-left: 20px;
 }
 
 @media (max-width: 959px) {
-  /* line 263, ../sass/include/_layout.scss */
+  /* line 322, ../sass/include/_layout.scss */
   .botleft, .botmid {
     margin: 0 0 20px 0;
   }
 }
 
-/* line 269, ../sass/include/_layout.scss */
+/* line 328, ../sass/include/_layout.scss */
 .logo_bottom {
   height: 87px;
   width: 82px;
@@ -611,7 +689,7 @@ body.landing h1, body.landing .contmain p {
   background: url("../images/bottom_heiner.png") no-repeat center center;
 }
 
-/* line 276, ../sass/include/_layout.scss */
+/* line 335, ../sass/include/_layout.scss */
 span.label {
   display: inline-block;
   width: 33%;
@@ -620,7 +698,7 @@ span.label {
 /*
  * Footer Landing
  */
-/* line 283, ../sass/include/_layout.scss */
+/* line 342, ../sass/include/_layout.scss */
 .footer {
   background-color: #262f80;
   color: white;
@@ -628,17 +706,17 @@ span.label {
   padding-bottom: 20px;
 }
 
-/* line 290, ../sass/include/_layout.scss */
+/* line 349, ../sass/include/_layout.scss */
 .footer .container {
   border-top: 1px solid white;
 }
 
-/* line 294, ../sass/include/_layout.scss */
+/* line 353, ../sass/include/_layout.scss */
 .footer div {
   line-height: 40px;
 }
 
-/* line 298, ../sass/include/_layout.scss */
+/* line 357, ../sass/include/_layout.scss */
 .footright {
   text-align: right;
 }
@@ -1681,7 +1759,7 @@ body.scrollfixed .footer {
   /* line 9, ../sass/include/_scrollup.scss */
   .scrollup {
     bottom: 0px;
-    right: 10px;
+    right: 20px;
   }
 }
 
@@ -1704,13 +1782,13 @@ body.scrollfixed .footer {
 /* line 3, ../sass/include/_lists.scss */
 .content ul {
   list-style: outside none none;
-  padding: 10px;
+  padding: 20px;
   background: #DDDDDD;
 }
 /* line 9, ../sass/include/_lists.scss */
 .content ul li {
   position: relative;
-  left: 20px;
+  left: 30px;
   line-height: 30px;
 }
 /* line 15, ../sass/include/_lists.scss */
@@ -1884,7 +1962,7 @@ html, body {
 }
 /* line 306, ../sass/gridle/_generate-mixins.scss */
 #gridle-settings {
-  content: '{ "version" : "1.3.38", "states" : { "retina":{ "query" : "(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx)", "classes" : false, "name" : "retina", "_gridle" : true }, "tv":{ "query" : "only tv", "classes" : false, "name" : "tv", "_gridle" : true }, "print":{ "query" : "only print", "classes" : false, "name" : "print", "_gridle" : true }, "portrait":{ "query" : "only screen and (orientation: portrait)", "classes" : false, "name" : "portrait", "_gridle" : true }, "landscape":{ "query" : "only screen and (orientation: landscape)", "classes" : false, "name" : "landscape", "_gridle" : true }, "default":{ "name" : "default", "min-width" : null, "max-width" : null, "query" : null, "classes" : true, "context" : "12", "gutter-width" : "20px", "direction" : "ltr", "name-multiplicator" : "1", "debug" : false, "debug-show-class-names" : true, "ie7-support" : false, "html-states-classes" : false, "generate-push-classes" : true, "generate-pull-classes" : true, "generate-prefix-classes" : true, "generate-suffix-classes" : true, "generate-helpers-classes" : true, "_gridle" : true }, "mobile":{ "name" : "mobile", "min-width" : null, "max-width" : "959px", "query" : "screen and (max-width: 959px)", "classes" : true, "context" : "12", "gutter-width" : "20px", "direction" : "ltr", "name-multiplicator" : "1", "debug" : false, "debug-show-class-names" : true, "ie7-support" : false, "html-states-classes" : false, "generate-push-classes" : true, "generate-pull-classes" : true, "generate-prefix-classes" : true, "generate-suffix-classes" : true, "generate-helpers-classes" : true, "_gridle" : true }} }';
+  content: '{ "version" : "1.3.38", "states" : { "retina":{ "query" : "(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx)", "classes" : false, "name" : "retina", "_gridle" : true }, "tv":{ "query" : "only tv", "classes" : false, "name" : "tv", "_gridle" : true }, "print":{ "query" : "only print", "classes" : false, "name" : "print", "_gridle" : true }, "portrait":{ "query" : "only screen and (orientation: portrait)", "classes" : false, "name" : "portrait", "_gridle" : true }, "landscape":{ "query" : "only screen and (orientation: landscape)", "classes" : false, "name" : "landscape", "_gridle" : true }, "default":{ "name" : "default", "min-width" : null, "max-width" : null, "query" : null, "classes" : true, "context" : "12", "gutter-width" : "20px", "direction" : "ltr", "name-multiplicator" : "1", "debug" : false, "debug-show-class-names" : true, "ie7-support" : false, "html-states-classes" : false, "generate-push-classes" : true, "generate-pull-classes" : true, "generate-prefix-classes" : true, "generate-suffix-classes" : true, "generate-helpers-classes" : true, "_gridle" : true }, "mobile":{ "name" : "mobile", "min-width" : null, "max-width" : "959px", "query" : "screen and (max-width: 959px)", "classes" : true, "context" : "12", "gutter-width" : "40px", "direction" : "ltr", "name-multiplicator" : "1", "debug" : false, "debug-show-class-names" : true, "ie7-support" : false, "html-states-classes" : false, "generate-push-classes" : true, "generate-pull-classes" : true, "generate-prefix-classes" : true, "generate-suffix-classes" : true, "generate-helpers-classes" : true, "_gridle" : true }} }';
 }
 
 /* line 502, ../sass/gridle/_generate-mixins.scss */
@@ -1893,6 +1971,13 @@ html, body {
   direction: ltr;
   padding-left: 10px;
   padding-right: 10px;
+}
+@media screen and (max-width: 959px) {
+  /* line 502, ../sass/gridle/_generate-mixins.scss */
+  .grid-5on18, .grid-0, .grid-1, .grid-2, .grid-3, .grid-4, .grid-5, .grid-6, .grid-7, .grid-8, .grid-9, .grid-10, .grid-11, .grid-12, .grid-mobile-5on18, .grid-mobile-0, .grid-mobile-1, .grid-mobile-2, .grid-mobile-3, .grid-mobile-4, .grid-mobile-5, .grid-mobile-6, .grid-mobile-7, .grid-mobile-8, .grid-mobile-9, .grid-mobile-10, .grid-mobile-11, .grid-mobile-12 {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 /* line 591, ../sass/gridle/_generate-mixins.scss */

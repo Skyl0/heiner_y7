@@ -12,8 +12,27 @@
 
 jQuery(document).ready(function($)  {
 	// Landing
+	var form = $('.newsletter');
+	//$('.newsletter .submit').hide();
+	$('.newsletter button.submit').show();
+	$('.newsletter button.submit').click(function(){
+		//document.form.submit();
+		document.form.submit();
+	});
 	
-	//$('.linkitem a').unwrap(); //.unwrap();
+		
+	
+	// Newsletter Focus on Blur
+	
+	var Input = $('input.nemail');
+    var default_value = Input.val();
+
+    Input.focus(function() {
+        if(Input.val() == default_value) Input.val("");
+    }).blur(function(){
+        if(Input.val().length == 0) Input.val(default_value);
+    });
+	//$('.newsletter input[type="submit"]').hide();
 	
 	// Höhe
 	var parent = $('html');

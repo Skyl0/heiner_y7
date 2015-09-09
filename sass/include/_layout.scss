@@ -186,6 +186,10 @@ body.landing h1 , body.landing .contmain p {
   padding: 40px 0;
 }
 
+.content ul {
+  margin: 20px 0 ;
+}
+
 .contright {
   background-color: $blau;
   color: white;
@@ -201,21 +205,76 @@ body.landing h1 , body.landing .contmain p {
   padding: 0 !important;
 }
 .contright {
+  margin-top: 10px;
    @include breakpoint(phone) { 
      position: relative;
-     top: 10px;
+   //  top: 10px;
    }
 }
 
 .contright > div {
   border-bottom: 1px solid white;
-    padding: 20px 10px;
+    padding: 20px 24px 40px 24px;
     margin: 0;
     
    @include breakpoint(phone) {
      border-right: 10px solid white;
      border-left: 10px solid white;
    }
+}
+
+.newsletter input[type="text"] {
+  margin: 20px 0;
+  font-style: italic;
+  color: #aaa;
+  padding: 3px;
+   @include breakpoint(desktop) {width: 182px;}
+    @include breakpoint(phone) {width: 75%;}
+}
+.newsletter button.submit {
+  display: inline;
+ // vertical-align: bottom;
+    font-family: "open_sansbold", Arial, sans-serif;
+ color: white;
+ background-color: $blau;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  font-size: $default;
+  cursor: pointer;
+}
+
+span.tsubmit {
+  display: none;
+}
+
+.newsletter button.submit:after {
+  content: " \f054";
+ position: relative;
+ top: 2px;
+ font-size: 20px;
+ font-family: "FontAwesome"; 
+}
+
+.slider p a {
+  text-decoration: none;
+  font-family: "open_sansbold", Arial, sans-serif;
+  transition: all 0.3s;
+  border: 1px solid $blau;
+}
+
+.slider p a:hover {
+  background-color: white;
+  color: $blau;
+}
+
+
+.slider p a:after {
+    content: " \f054";
+ position: relative;
+ top: 2px;
+ font-size: 20px;
+ font-family: "FontAwesome"; 
 }
 
 .contright {
