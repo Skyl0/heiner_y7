@@ -242,6 +242,11 @@ body.landing h1 , body.landing .contmain p {
   padding: 0;
   font-size: $default;
   cursor: pointer;
+  transition: all 0.3s;
+}
+
+.newsletter button.submit:hover {
+  color: #ccc;
 }
 
 span.tsubmit {
@@ -291,6 +296,7 @@ span.tsubmit {
   margin-bottom: 10px;
   text-decoration: none;
   font-family:"open_sansbold";
+   transition: all 0.3s;
 }
 
 .contright a:hover {
@@ -352,6 +358,17 @@ span.label {
 
 .footer div {
   line-height: 40px;
+}
+
+.footer a {
+  color : white;
+  text-decoration: none;
+  transition: all 0.3s;
+
+}
+
+.footer a:hover {
+  color: #ccc;
 }
 
 .footright {

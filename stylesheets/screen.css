@@ -588,14 +588,20 @@ body.landing h1, body.landing .contmain p {
   padding: 0;
   font-size: 1em;
   cursor: pointer;
+  transition: all 0.3s;
 }
 
-/* line 247, ../sass/include/_layout.scss */
+/* line 248, ../sass/include/_layout.scss */
+.newsletter button.submit:hover {
+  color: #ccc;
+}
+
+/* line 252, ../sass/include/_layout.scss */
 span.tsubmit {
   display: none;
 }
 
-/* line 251, ../sass/include/_layout.scss */
+/* line 256, ../sass/include/_layout.scss */
 .newsletter button.submit:after {
   content: " \f054";
   position: relative;
@@ -604,7 +610,7 @@ span.tsubmit {
   font-family: "FontAwesome";
 }
 
-/* line 259, ../sass/include/_layout.scss */
+/* line 264, ../sass/include/_layout.scss */
 .slider p a {
   text-decoration: none;
   font-family: "open_sansbold", Arial, sans-serif;
@@ -612,13 +618,13 @@ span.tsubmit {
   border: 1px solid #262f80;
 }
 
-/* line 266, ../sass/include/_layout.scss */
+/* line 271, ../sass/include/_layout.scss */
 .slider p a:hover {
   background-color: white;
   color: #262f80;
 }
 
-/* line 272, ../sass/include/_layout.scss */
+/* line 277, ../sass/include/_layout.scss */
 .slider p a:after {
   content: " \f054";
   position: relative;
@@ -628,13 +634,13 @@ span.tsubmit {
 }
 
 @media (max-width: 959px) {
-  /* line 280, ../sass/include/_layout.scss */
+  /* line 285, ../sass/include/_layout.scss */
   .contright {
     margin: 20px 0 0 0;
   }
 }
 
-/* line 287, ../sass/include/_layout.scss */
+/* line 292, ../sass/include/_layout.scss */
 .contright a {
   color: white;
   position: relative;
@@ -642,14 +648,15 @@ span.tsubmit {
   margin-bottom: 10px;
   text-decoration: none;
   font-family: "open_sansbold";
+  transition: all 0.3s;
 }
 
-/* line 296, ../sass/include/_layout.scss */
+/* line 302, ../sass/include/_layout.scss */
 .contright a:hover {
   color: #ccc;
 }
 
-/* line 300, ../sass/include/_layout.scss */
+/* line 306, ../sass/include/_layout.scss */
 .contright a:after {
   content: " \f054";
   position: relative;
@@ -661,7 +668,7 @@ span.tsubmit {
 /*
  * Bottom Landing
  */
-/* line 311, ../sass/include/_layout.scss */
+/* line 317, ../sass/include/_layout.scss */
 .bottom {
   background-color: #262f80;
   color: white;
@@ -669,19 +676,19 @@ span.tsubmit {
   padding: 40px 0;
 }
 
-/* line 318, ../sass/include/_layout.scss */
+/* line 324, ../sass/include/_layout.scss */
 .botmid {
   padding-left: 20px;
 }
 
 @media (max-width: 959px) {
-  /* line 322, ../sass/include/_layout.scss */
+  /* line 328, ../sass/include/_layout.scss */
   .botleft, .botmid {
     margin: 0 0 20px 0;
   }
 }
 
-/* line 328, ../sass/include/_layout.scss */
+/* line 334, ../sass/include/_layout.scss */
 .logo_bottom {
   height: 87px;
   width: 82px;
@@ -689,7 +696,7 @@ span.tsubmit {
   background: url("../images/bottom_heiner.png") no-repeat center center;
 }
 
-/* line 335, ../sass/include/_layout.scss */
+/* line 341, ../sass/include/_layout.scss */
 span.label {
   display: inline-block;
   width: 33%;
@@ -698,7 +705,7 @@ span.label {
 /*
  * Footer Landing
  */
-/* line 342, ../sass/include/_layout.scss */
+/* line 348, ../sass/include/_layout.scss */
 .footer {
   background-color: #262f80;
   color: white;
@@ -706,17 +713,29 @@ span.label {
   padding-bottom: 20px;
 }
 
-/* line 349, ../sass/include/_layout.scss */
+/* line 355, ../sass/include/_layout.scss */
 .footer .container {
   border-top: 1px solid white;
 }
 
-/* line 353, ../sass/include/_layout.scss */
+/* line 359, ../sass/include/_layout.scss */
 .footer div {
   line-height: 40px;
 }
 
-/* line 357, ../sass/include/_layout.scss */
+/* line 363, ../sass/include/_layout.scss */
+.footer a {
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+/* line 370, ../sass/include/_layout.scss */
+.footer a:hover {
+  color: #ccc;
+}
+
+/* line 374, ../sass/include/_layout.scss */
 .footright {
   text-align: right;
 }
@@ -797,18 +816,60 @@ h3 {
 }
 
 /* line 92, ../sass/include/_fonts.scss */
+hr {
+  color: #262f80;
+  margin: 20px 0;
+  height: 1px;
+}
+
+/* line 98, ../sass/include/_fonts.scss */
 p {
   line-height: 150%;
 }
 
-/* line 96, ../sass/include/_fonts.scss */
+/* line 102, ../sass/include/_fonts.scss */
+.contmain p.bodytext {
+  margin-bottom: 20px;
+}
+
+/* line 107, ../sass/include/_fonts.scss */
+.contmain p.bodytext a {
+  line-height: 20px;
+  bottom: 0px;
+  left: 0px;
+  display: inline-block;
+  background: #262f80;
+  border: 1px solid #262f80;
+  color: white;
+  padding: 10px;
+  font-size: 1.05em;
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+
+/* line 123, ../sass/include/_fonts.scss */
+.contmain p.bodytext a:after {
+  content: " \f054";
+  position: relative;
+  top: 2px;
+  font-size: 20px;
+  font-family: "FontAwesome";
+}
+
+/* line 131, ../sass/include/_fonts.scss */
+.contmain p.bodytext a:hover {
+  background: white;
+  color: #262f80;
+}
+
+/* line 138, ../sass/include/_fonts.scss */
 sub {
   font-size: 0.66em;
   position: relative;
   top: 3px;
 }
 
-/* line 102, ../sass/include/_fonts.scss */
+/* line 144, ../sass/include/_fonts.scss */
 sup {
   font-size: 0.66em;
   position: relative;
@@ -1807,64 +1868,65 @@ body.scrollfixed .footer {
 /* line 3, ../sass/include/_forms.scss */
 .csc-mailform label em {
   text-transform: none;
-  color: #990036;
+  padding: 5px 0;
+  color: #262f80;
   font-size: 0.8em;
   line-height: 0.9em;
 }
-/* line 10, ../sass/include/_forms.scss */
+/* line 11, ../sass/include/_forms.scss */
 .csc-mailform .csc-form-element {
   margin: 0 0 10px 0;
 }
-/* line 14, ../sass/include/_forms.scss */
+/* line 15, ../sass/include/_forms.scss */
 .csc-mailform textarea, .csc-mailform input[type] {
-  border: 1px solid #990036;
+  border: 1px solid #262f80;
   padding: 5px;
   font-size: 16px;
   -webkit-appearance: none;
 }
 @media (min-width: 960px) {
-  /* line 14, ../sass/include/_forms.scss */
+  /* line 15, ../sass/include/_forms.scss */
   .csc-mailform textarea, .csc-mailform input[type] {
     width: 65%;
   }
 }
 @media (max-width: 959px) {
-  /* line 14, ../sass/include/_forms.scss */
+  /* line 15, ../sass/include/_forms.scss */
   .csc-mailform textarea, .csc-mailform input[type] {
     width: 94%;
   }
 }
-/* line 23, ../sass/include/_forms.scss */
+/* line 24, ../sass/include/_forms.scss */
 .csc-mailform input[type="submit"] {
   -webkit-appearance: none;
   position: relative;
-  background: #990036;
+  background: #262f80;
   color: white;
   font-family: "OpenSans", Arial, sans-serif;
 }
 @media (min-width: 960px) {
-  /* line 23, ../sass/include/_forms.scss */
+  /* line 24, ../sass/include/_forms.scss */
   .csc-mailform input[type="submit"] {
     width: 300px;
   }
 }
 @media (max-width: 959px) {
-  /* line 23, ../sass/include/_forms.scss */
+  /* line 24, ../sass/include/_forms.scss */
   .csc-mailform input[type="submit"] {
     width: 94%;
   }
 }
 @media (min-width: 960px) {
-  /* line 23, ../sass/include/_forms.scss */
+  /* line 24, ../sass/include/_forms.scss */
   .csc-mailform input[type="submit"] {
-    left: 224px;
+    left: 0px;
   }
 }
-/* line 37, ../sass/include/_forms.scss */
+/* line 38, ../sass/include/_forms.scss */
 .csc-mailform label {
   position: relative;
 }
-/* line 41, ../sass/include/_forms.scss */
+/* line 42, ../sass/include/_forms.scss */
 .csc-mailform strong {
   display: inline-block;
   padding: 8px;
@@ -1872,7 +1934,7 @@ body.scrollfixed .footer {
   position: relative;
   margin-bottom: 5px;
   top: 3px;
-  color: #990036;
+  color: #262f80;
   font-style: italic;
   font-size: 0.8em;
   text-transform: none;
@@ -1950,7 +2012,27 @@ body.scrollfixed .footer {
   font-family: 'roboto';
 }
 
-/* line 33, ../sass/screen.scss */
+/* line 1, ../sass/include/_tables.scss */
+th {
+  font-family: "open_sansbold", Arial, sans-serif;
+  background-color: #262f80;
+  color: white;
+  padding: 10px;
+  border: 1px solid #262f80;
+}
+
+/* line 10, ../sass/include/_tables.scss */
+tr td {
+  padding: 10px;
+  border: 1px solid #aaa;
+}
+
+/* line 16, ../sass/include/_tables.scss */
+.tr-even {
+  background-color: #ccc;
+}
+
+/* line 34, ../sass/screen.scss */
 html, body {
   height: auto;
 }

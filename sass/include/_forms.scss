@@ -2,17 +2,18 @@
   
   label em {
     text-transform: none;
-    color: $weinrot;
+    padding: 5px 0 ;
+    color: $blau;
     font-size: $smaller;
     line-height: $small;
   }
-  
+
   .csc-form-element {
     margin: 0 0 10px 0;
   }
   
   textarea, input[type] {
-    border: 1px solid $weinrot;
+    border: 1px solid $blau;
     padding: 5px;
     font-size: 16px;
      @include breakpoint(desktop) {width: 65%;}
@@ -26,9 +27,9 @@
      @include breakpoint(phone) { width: 94%; }
     position: relative;
     @include breakpoint(desktop) {
-      left: 224px;
+      left: 0px;
     }
-    background: $weinrot;
+    background: $blau;
     color: $weiss;
     //font-weight: bold;
     font-family: "OpenSans", Arial, sans-serif;
@@ -47,7 +48,7 @@
     margin-bottom: 5px;
     top: 3px;
     //left: 5px;
-    color: $weinrot;
+    color: $blau;
     font-style: italic;
     font-size: $smaller; 
     text-transform: none;

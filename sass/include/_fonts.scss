@@ -89,9 +89,51 @@ h3 {
   margin: 20px 0;
 }
 
+hr {
+  color: $blau;
+  margin: 20px 0 ;
+  height: 1px;
+}
+
 p {
   line-height: 150%;
 }
+
+.contmain p.bodytext {
+  margin-bottom: 20px;
+}
+
+
+.contmain p.bodytext a {
+  line-height: 20px;
+ // position: absolute;
+  bottom: 0px;
+  left: 0px;
+
+  display: inline-block;
+  background: $blau;
+  border: 1px solid $blau;
+  color: white;
+  padding: 10px;
+  font-size: $big;
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+
+.contmain p.bodytext a:after {
+   content: " \f054";
+ position: relative;
+ top: 2px;
+ font-size: 20px;
+ font-family: "FontAwesome"; 
+} 
+
+.contmain p.bodytext a:hover {
+  background: white;
+  color: $blau;
+}
+
+
 
 sub {
   font-size: 0.66em;

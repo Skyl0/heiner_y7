@@ -1,0 +1,18 @@
+th {
+  font-family: "open_sansbold", Arial, sans-serif;
+  background-color: $blau;
+  color: white;
+//  width: 50%;
+  padding: 10px;
+  border: 1px solid $blau;
+}
+
+tr td {
+// width: 50%;
+  padding: 10px;
+  border: 1px solid #aaa;
+}
+
+.tr-even {
+  background-color: #ccc; 
+}
