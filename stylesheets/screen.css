@@ -1904,6 +1904,38 @@ body.scrollfixed .footer {
   width: 1.5em;
   margin-left: -1.5em;
 }
+/* line 28, ../sass/include/_lists.scss */
+.content li.csc-uploads-element::before {
+  content: "\f15c" !important;
+  font-family: "FontAwesome";
+  display: inline-block;
+  color: #262f80;
+  font-size: 16px;
+  position: relative;
+  bottom: 1px;
+  width: 1.5em;
+  margin-left: 0em !important;
+}
+/* line 42, ../sass/include/_lists.scss */
+.content li.csc-uploads-element-pdf::before {
+  content: "\f1c1" !important;
+  font-family: "FontAwesome";
+  display: inline-block;
+  color: #262f80;
+  font-size: 16px;
+  position: relative;
+  bottom: 1px;
+  width: 1.5em;
+  margin-left: 0em !important;
+}
+/* line 55, ../sass/include/_lists.scss */
+.content ul.csc-uploads span {
+  display: inline-block !important;
+}
+/* line 59, ../sass/include/_lists.scss */
+.content ul.csc-uploads {
+  padding: 10px 0;
+}
 
 /* line 3, ../sass/include/_forms.scss */
 .csc-mailform label em {

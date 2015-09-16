@@ -24,4 +24,39 @@
     margin-left: -1.5em;
 
 }
+
+li.csc-uploads-element::before {
+  
+      content: "\f15c" !important;
+    font-family: "FontAwesome";
+    display: inline-block;
+    color: $blau;
+    font-size: 16px;
+    position: relative;
+   bottom: 1px;
+    width: 1.5em;
+   margin-left: 0em !important; 
+}
+
+
+li.csc-uploads-element-pdf::before {
+    content: "\f1c1" !important;
+    font-family: "FontAwesome";
+    display: inline-block;
+    color: $blau;
+    font-size: 16px;
+    position: relative;
+   bottom: 1px;
+    width: 1.5em;
+   margin-left: 0em !important; 
+}
+
+
+ul.csc-uploads span {
+  display: inline-block !important;
+}
+
+ul.csc-uploads {
+  padding: 10px 0 ;
+}
 }
