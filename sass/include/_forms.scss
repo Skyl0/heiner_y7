@@ -21,6 +21,10 @@
       -webkit-appearance: none;
   }
   
+  input[type="text"] {
+    margin-top: 5px;
+  }
+  
   input[type="submit"] {
     -webkit-appearance: none;
     @include breakpoint(desktop) { width: 300px; }

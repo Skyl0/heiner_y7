@@ -33,9 +33,17 @@
 
 html, body {
  
-  height: auto;
-  
+  //height: auto;
+  //overflow-x: hidden;
 
+}
+
+body {
+  overflow-x: hidden;
+}
+
+body.fixed {
+  overflow-x: auto;
 }
 
 
