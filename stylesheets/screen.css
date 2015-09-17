@@ -2110,9 +2110,10 @@ body.scrollfixed .footer {
 /* line 15, ../sass/include/_forms.scss */
 .csc-mailform textarea, .csc-mailform input[type] {
   border: 1px solid #262f80;
-  padding: 1%;
+  padding: 3px;
   font-size: 16px;
   -webkit-appearance: none;
+  box-sizing: border-box;
 }
 @media (min-width: 960px) {
   /* line 15, ../sass/include/_forms.scss */
@@ -2123,44 +2124,46 @@ body.scrollfixed .footer {
 @media (max-width: 959px) {
   /* line 15, ../sass/include/_forms.scss */
   .csc-mailform textarea, .csc-mailform input[type] {
-    width: 94%;
+    width: 100%;
   }
 }
-/* line 25, ../sass/include/_forms.scss */
+/* line 26, ../sass/include/_forms.scss */
 .csc-mailform input[type="text"] {
   margin-top: 5px;
+  box-sizing: border-box;
 }
-/* line 29, ../sass/include/_forms.scss */
+/* line 31, ../sass/include/_forms.scss */
 .csc-mailform input[type="submit"] {
   -webkit-appearance: none;
   position: relative;
   background: #262f80;
   color: white;
   font-family: "OpenSans", Arial, sans-serif;
+  box-sizing: border-box;
 }
 @media (min-width: 960px) {
-  /* line 29, ../sass/include/_forms.scss */
+  /* line 31, ../sass/include/_forms.scss */
   .csc-mailform input[type="submit"] {
-    width: 67.5%;
+    width: 65%;
   }
 }
 @media (max-width: 959px) {
-  /* line 29, ../sass/include/_forms.scss */
+  /* line 31, ../sass/include/_forms.scss */
   .csc-mailform input[type="submit"] {
-    width: 96.5%;
+    width: 100%;
   }
 }
 @media (min-width: 960px) {
-  /* line 29, ../sass/include/_forms.scss */
+  /* line 31, ../sass/include/_forms.scss */
   .csc-mailform input[type="submit"] {
     left: 0px;
   }
 }
-/* line 43, ../sass/include/_forms.scss */
+/* line 46, ../sass/include/_forms.scss */
 .csc-mailform label {
   position: relative;
 }
-/* line 47, ../sass/include/_forms.scss */
+/* line 50, ../sass/include/_forms.scss */
 .csc-mailform strong {
   display: inline-block;
   padding: 8px;
