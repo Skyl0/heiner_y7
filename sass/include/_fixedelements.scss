@@ -15,16 +15,54 @@ body.scrollfixed .top {
   position: fixed;
   background-color: white;
   top: 0px;
+  height: 60px;
   width: 100%;
   z-index: 5001;
   //box-shadow: 3px 3px 6px rgba(0,0,0,0.5);
 }
 
+body.scrollfixed .social {
+  margin: 10px 0 !important;
+} 
+
+body.scrollfixed .logo {
+  height: 55px !important;
+  width: 259px;
+  @media (min-width: 361px) and (max-width:389px) {
+    width: 60px !important;
+  } 
+  @media (max-width:360px) {
+    width: 60px !important;
+  }
+  display: block;
+  background: url('../images/heiner_top_small.png') no-repeat left center !important;
+}
+
+body.scrollfixed {
+  
+  .burger {
+    position: absolute;
+    top: 0px;
+    right: 20px;
+    width: 30px;
+    margin: 10px 0;
+  }
+  
+  .burger div {
+    margin: 8px 0px;
+  }
+  .topleft a {
+    display: block;
+    margin: 2.5px 0;
+  }
+}
+
+
 
 body.scrollfixed .menu {
   position: fixed;
   background-color: white;
-  top: 140px;
+  top: 60px;
   width: 100%;
   z-index: 5000;
   //box-shadow: 3px 3px 6px rgba(0,0,0,0.5);

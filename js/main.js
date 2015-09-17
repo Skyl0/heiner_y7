@@ -1,15 +1,3 @@
-/* 
- * ----------------
- * Skript: Germania 2015
- * Für meine liebe Germania 2015
- * Von : Marc Ernst
- * Firma : SkyIT Webdesign Darmstadt
- * Erstellt: 26.7.2015
- * ----------------
- * Version 0.0.1
- * ----------------
- */
-
 jQuery(document).ready(function($)  {
 	// Landing
 	var form = $('.newsletter');
@@ -215,18 +203,16 @@ jQuery(document).ready(function($)  {
 		 // animateContainer();
 		},
 		onSliderLoad: function() {
-		//	$('.slider_load').fadeOut(500);	
+			resizeImage(); 
 		//	setTimeout(resizeImage,10);		
 		}
 		
 	});	
 	
-		resizeImage(); 
-	// Container animate
+		
 	
-	
+
 	// Carousel
-	
 	
 
 		var seslider = $('.y7-se-slider');

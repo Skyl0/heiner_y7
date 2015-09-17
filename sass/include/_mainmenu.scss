@@ -21,7 +21,8 @@
     .leftfill {
       position: absolute;
       height: $menuheight + 20;
-      display:block;
+     @include breakpoint(desktop) { display:block; }
+     @include breakpoint(phone) { display: none; }
       left: -50%;
       width: 50%;
       background: rgba(38,47,128,0.66); 
@@ -30,7 +31,8 @@
     .rightfill {
       position: absolute;
       height: $menuheight + 20;
-      display:block;
+      @include breakpoint(desktop) { display:block; }
+     @include breakpoint(phone) { display: none; }
       left: 960px;
       width: 50%;
       background: rgba(38,47,128,0.66); 

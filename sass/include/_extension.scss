@@ -24,6 +24,12 @@
  @include breakpoint(desktop) {height: 410px;}
 }
 
+.y7-se-first {
+  height: 250px;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
 .tx-y7-simpleelements .clearfix::after {
   @include breakpoint(desktop) { height: 60px !important; }
 }
@@ -43,7 +49,7 @@
   position: relative;
   width: 210px;   
   float: left;
-   height: 327px;
+   height: 359px;
 }
 
 @media (max-width: 675px) {

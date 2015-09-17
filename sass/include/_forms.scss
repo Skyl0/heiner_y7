@@ -14,7 +14,8 @@
   
   textarea, input[type] {
     border: 1px solid $blau;
-    padding: 5px;
+  //  @include breakpoint(desktop) { padding: 5px; }
+    padding: 1%;
     font-size: 16px;
      @include breakpoint(desktop) {width: 65%;}
       @include breakpoint(phone) {width: 94%;}
@@ -27,8 +28,8 @@
   
   input[type="submit"] {
     -webkit-appearance: none;
-    @include breakpoint(desktop) { width: 300px; }
-     @include breakpoint(phone) { width: 94%; }
+    @include breakpoint(desktop) { width: 67.5%; }
+     @include breakpoint(phone) { width: 96.5%; }
     position: relative;
     @include breakpoint(desktop) {
       left: 0px;
