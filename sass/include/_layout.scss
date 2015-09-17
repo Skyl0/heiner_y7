@@ -27,9 +27,18 @@ position: relative;
 
 .logo {
   height: 87px;
-  width: 283px;
+  width: 283px; 
+  @media (max-width:390px) {
+    width: 87px !important;
+  }
   display: block;
-  background: url('../images/heiner_top.png') no-repeat center center;
+  background: url('../images/heiner_top.png') no-repeat left center;
+}
+
+body.landing .logo {
+  @media (max-width:360px) {
+    width: 87px !important;
+  }
 }
 
 .topleft a {
@@ -194,8 +203,21 @@ body.bautraeger .contmain {
   min-height: 400px;
 }
 
-body.landing .contmain {
- // min-height: 200px !important;
+body.landing {
+ overflow-x: hidden;
+}
+
+body.landing .csc-textpic-imagewrap {
+  @include breakpoint(phone) {
+    position: relative;
+    left:50%;
+    margin-left: -150px;
+  }
+}
+@media screen and (max-width: 400px) {
+  body.landing .csc-textpic-imagewrap img {
+  //  width: 100% !important;
+  }
 }
 
 .linkitem p.bodytext {
@@ -242,8 +264,8 @@ body.landing h1 , body.landing .contmain p {
     margin: 0;
     
    @include breakpoint(phone) {
-     border-right: 10px solid white;
-     border-left: 10px solid white;
+     border-right: 20px solid white;
+     border-left: 20px solid white;
    }
 }
 
@@ -365,6 +387,34 @@ span.tsubmit {
 span.label {
   display: inline-block;
   width: 33%;
+  @media (max-width: 500px) {
+    width: 100% !important;
+  }
+}
+
+.hide420 {
+  @media (max-width: 421px) {
+    display:none !important;
+  }
+}
+
+@media (max-width: 320px) {
+  .footer {
+    font-size: 13px !important;
+  }
+}
+
+@include breakpoint(phone) {
+  .footright {
+    text-align: left !important;
+  }
+}
+
+span.data {
+  @media (max-width: 500px) {
+    display: inline-block;
+    margin-bottom: 10px !important;
+  }
 }
 /*
  * Footer Landing
@@ -373,7 +423,7 @@ span.label {
   background-color: $blau;
   color: white;
   font-size: $small;
-  padding-bottom: 20px;
+  @include breakpoint(desktop) {padding-bottom: 20px;}
 }
 
 .footer .container {

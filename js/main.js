@@ -103,45 +103,13 @@ jQuery(document).ready(function($)  {
 		resizeImage();
 		//getHeightFixed();
 		
-		if ($(window).width() >= 945) {
+		if ($(window).width() >= 959) {
 			$('.menu').slideDown('fast');
 		} else {
 			$('.menu').hide();
 		}
 	});
 	
-	
-     /*
-      * Fix Shortcode Height
-      */
-      
-     var sc1 = $('.shortcodes_left .sc_item').height();
-     var sc2 = $('.shortcodes_middle .sc_item').height();
-     var sc3 = $('.shortcodes_right .sc_item').height();
-     var max = sc1;
-     
- //    console.log('Max: ' + max + " [sc1/2/3]: " + sc1 + " " + sc2 + " " + sc3);
-     resizeShortcodes();
-     
- 	function resizeShortcodes () {
-
- 		     //if ($().width() > 959 ){
-			     if (sc2 > max) {			     	
-					max = sc2;	
-			//		 console.log('Max: ' + max );	     	
-			     }
-			     if (sc3 > max) {
-			     	max = sc3;
-		//	     	 console.log('Max: ' + max );
-			     }
-		    
-		     	$('.shortcodes_left .sc_item').height(max);
-		     	$('.shortcodes_middle .sc_item').height(max);
-		     	$('.shortcodes_right .sc_item').height(max);
-		     	
-		   //  }
- 	}
- 	
      
      /**
       * Fixedmenu
@@ -231,8 +199,7 @@ jQuery(document).ready(function($)  {
 		//return true;
 	}
 	
-	resizeImage(); 
-	// Container animate
+
 	
 	
 	// bxSlider
@@ -253,6 +220,9 @@ jQuery(document).ready(function($)  {
 		}
 		
 	});	
+	
+		resizeImage(); 
+	// Container animate
 	
 	
 	// Carousel

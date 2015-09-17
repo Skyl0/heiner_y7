@@ -90,9 +90,14 @@ h3 {
 }
 
 hr {
+  background-color: $blau;
   color: $blau;
   margin: 20px 0 ;
   height: 1px;
+}
+
+.bottom a, a[href^=tel] {
+  color:#FFF; text-decoration:none;
 }
 
 p {
