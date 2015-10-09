@@ -297,10 +297,10 @@ body.landing h1 , body.landing .contmain p {
 .newsletter button.submit {
   display: inline;
  // vertical-align: bottom;
-    font-family: "open_sansbold", Arial, sans-serif;
+    font-family: "open_sansregular", Arial, sans-serif;
  color: white;
  background-color: $blau2;
-  border: 0;
+  border: 1px solid $blau2;
   margin: 0;
     padding: 8px 14px 10px 8px;
   font-size: $default;
@@ -309,7 +309,8 @@ body.landing h1 , body.landing .contmain p {
 }
 
 .newsletter button.submit:hover {
-  color: #ccc;
+  color: $blau;
+  background-color: white;
 }
 
 span.tsubmit {
@@ -356,6 +357,7 @@ span.tsubmit {
 
 .contright a {
   background-color: $blau2;
+  border: 1px solid $blau2;
 padding: 8px 14px 10px 8px;
   color: white;
   position: relative;
@@ -363,12 +365,13 @@ padding: 8px 14px 10px 8px;
   margin: 10px 0 ;
   top: 10px;
   text-decoration: none;
-  font-family:"open_sansbold";
+  font-family:"open_sansregular";
    transition: all 0.3s;
 }
 
 .contright a:hover {
-  color: #ccc;
+  color: $blau;
+  background-color: white;
 }
 
 .contright a:after {

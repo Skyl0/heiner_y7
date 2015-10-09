@@ -198,6 +198,7 @@ jQuery(document).ready(function($)  {
 		useCSS : 'false',
 		preloadImages: 'all',
 		infiniteLoop: 'true',
+		pager: 'false',
 		//preventDefaultSwipeY: 'true',
 		onSlideBefore: function(){
 		 // animateContainer();
@@ -248,7 +249,10 @@ jQuery(document).ready(function($)  {
 
 	$('.slider .bxslider .csc-textpic-text').addClass('container');
 	
-		 
+	var pages = $('div.bx-pager-item').length;
 	
+	if (pages < 2) {
+		$('div.bx-pager-item').hide();
+	}	
 
 });

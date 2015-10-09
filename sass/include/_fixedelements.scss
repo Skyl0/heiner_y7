@@ -27,16 +27,46 @@ body.scrollfixed .social {
 
 body.scrollfixed .logo {
   height: 55px !important;
-  width: 259px;
+  width: 487px;
   @media (min-width: 361px) and (max-width:389px) {
-    width: 60px !important;
+ //   width: 60px !important;
   } 
   @media (max-width:360px) {
-    width: 60px !important;
+//    width: 60px !important;
   }
   display: block;
-  background: url('../images/heiner_top_small.png') no-repeat left center !important;
+  background: url('../images/heiner_fixed.png') no-repeat left center !important;
+  background-size: cover;
 }
+
+
+img.nonfix {
+  position: absolute;
+  width: 283px;
+  height: 87px;
+  
+}
+img.fix {
+  display: none;
+  position: absolute;
+  top: 2px;
+  width: 443px;
+  height: 50px;
+}
+
+img.city {
+  width: 233px !important;
+}
+
+body.scrollfixed img.nonfix {
+  display: none;
+}
+
+body.scrollfixed img.fix {
+  display: inline-block;
+}
+
+
 
 body.scrollfixed {
   

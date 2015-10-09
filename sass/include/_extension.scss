@@ -97,8 +97,9 @@
   position: absolute;
   bottom: 0px;
   left: 0px;
-   @include breakpoint(desktop) {width: 100%;}
-    @include breakpoint(phone) {width: auto;}
+  width: auto;
+//   @include breakpoint(desktop) {width: 100%;}
+  //  @include breakpoint(phone) {width: auto;}
   display: block;
   background: $blau2;
   border: 1px solid $blau2;

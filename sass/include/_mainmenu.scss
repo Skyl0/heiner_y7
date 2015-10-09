@@ -57,7 +57,7 @@ ul.mmcity li a {
   .menu {
    position: relative;
      @include breakpoint(desktop) { display: block; } //position: absolute;}
-    @include breakpoint(phone) { display: none;  background: rgba(38,47,128,1); }
+    @include breakpoint(phone) { display: none; background-color: $blau2; }// background: rgba(38,47,128,1); }
     z-index: 9999;
   }
   
@@ -65,7 +65,7 @@ ul.mmcity li a {
   .menu {
     
     .container {
-           @include breakpoint(desktop) { display: block; background: rgba(38,47,128,0.66); } //position: absolute;}
+           @include breakpoint(desktop) { display: block; background-color: $blau2; }//background: rgba(38,47,128,0.66); } //position: absolute;}
            position: relative;
     }
     
@@ -76,7 +76,7 @@ ul.mmcity li a {
      @include breakpoint(phone) { display: none; }
       left: -50%;
       width: 50%;
-      background: rgba(38,47,128,0.66); 
+     background-color: $blau2; // background: rgba(38,47,128,0.66); 
     }
     
     .rightfill {
@@ -86,14 +86,14 @@ ul.mmcity li a {
      @include breakpoint(phone) { display: none; }
       left: 960px;
       width: 50%;
-      background: rgba(38,47,128,0.66); 
+     background-color: $blau2; // background: rgba(38,47,128,0.66); 
     }
     
     
     ul {
       z-index: 9999;
       display: block;
-      @include breakpoint(desktop) { background: rgba(38,47,128,0.66);} 
+      @include breakpoint(desktop) { background-color: $blau2; }//background: rgba(38,47,128,0.66);} 
       list-style-type: none;
     }
     ul li {
@@ -108,17 +108,17 @@ ul.mmcity li a {
       padding: 10px 16px;
       text-decoration: none;
       color: white;
-      @include breakpoint(phone) {background: rgba(38,47,128,0.66);}
-      @include breakpoint(desktop) {background: rgba(38, 47, 128, 0);}
+      @include breakpoint(phone) {background-color: $blau2; }//background: rgba(38,47,128,0.66);}
+      @include breakpoint(desktop) {background-color: $blau2; }//background: rgba(38, 47, 128, 0);}
       transition: all 0.5s;
     }
     
     ul li a:hover {
-      background: rgba(38,47,128,1);
+     background-color: $blau; // background: rgba(38,47,128,1);
     }
     
-    .mmcurrent {
-      background: rgba(38,47,128,1);
+    .mmcurrent a {
+      background-color: $blau !important; //rgba(38,47,128,1);
     }
   }
     

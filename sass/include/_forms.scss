@@ -30,8 +30,9 @@
   
   input[type="submit"] {
     -webkit-appearance: none;
-    @include breakpoint(desktop) { width: 65%; }
-     @include breakpoint(phone) { width: 100%; }
+    width: auto; 
+ //   @include breakpoint(desktop) { width: auto; }
+   //  @include breakpoint(phone) { width: 100%; }
     position: relative;
     @include breakpoint(desktop) {
       left: 0px;
@@ -41,9 +42,18 @@
     border: 1px solid $blau2;
     color: $weiss;
     //font-weight: bold;
-    font-family: "OpenSans", Arial, sans-serif;
+    font-family: "open_sansbold", Arial, sans-serif;
     box-sizing: border-box;
   }
+  
+    input[type="submit"]:after {
+       content: " \f054";
+ position: relative;
+ top: 0px;
+ left: 4px;
+ font-size: 13px;
+ font-family: "FontAwesome"; 
+    }
   
   label {
     position: relative;
