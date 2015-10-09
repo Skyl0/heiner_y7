@@ -1,6 +1,57 @@
+/** Makler Menu */
+  
+  ul.sidemenu {
+          margin: 0 !important;
+          padding: 0 !important;
+          
+          li {
+            list-style-type: none;
+            display: inline;
+            left: 0px !important;
+            margin-right: 10px;
+            border-right: 2px solid $blau;
+            padding-right: 10px;
+          }
+          
+          a {
+            color: black !important;
+          }
+          
+          li::before {
+            content: "" !important;
+          }
+          li:last-child {
+            border-right: 0px solid white !important;
+          }
+         
+
+  
+  }
+ul.inner {
+          margin: 0 !important;
+          padding: 0 !important;
+          
+          li.sidecurrent a {
+            font-family: "open_sansbold", Arial, sans-serif !important;
+            color: $blau !important;
+          }
+ }
 /** 
  *   Main Menu 
  */
+
+ul.mmmakler li a {
+  padding: 10px 28px !important;
+}
+
+ul.mmbau li a {
+  padding: 10px 24px !important;
+}
+
+ul.mmcity li a {
+  padding: 10px 16px !important;
+}
+
 
 // Just Menu
   .menu {
@@ -54,7 +105,7 @@
       height:  $menuheight;
       line-height:  $menuheight;
       display: block;
-      padding: 10px;
+      padding: 10px 16px;
       text-decoration: none;
       color: white;
       @include breakpoint(phone) {background: rgba(38,47,128,0.66);}
@@ -63,6 +114,10 @@
     }
     
     ul li a:hover {
+      background: rgba(38,47,128,1);
+    }
+    
+    .mmcurrent {
       background: rgba(38,47,128,1);
     }
   }

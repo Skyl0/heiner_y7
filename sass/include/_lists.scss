@@ -2,8 +2,9 @@
  
  ul {
    list-style: outside none none;
-   padding: 15px;
-   background: #DDDDDD; //rgba(100,100,100,0.2);
+   padding: 13px;
+   //background: #DDDDDD; //rgba(100,100,100,0.2);
+   background-color: #fff;
  } 
  
  ul li {
@@ -17,9 +18,9 @@
     font-family: "FontAwesome";
     display: inline-block;
     color: $blau;
-    font-size: 12px;
+    font-size: 9px;
     position: relative;
-    bottom: 1px;
+    bottom: 3px;
     width: 1.5em;
     margin-left: -1.5em;
 

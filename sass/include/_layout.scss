@@ -176,8 +176,8 @@ body.landing {
     position: relative;
     width: 200px;
     padding: 10px;
-    border: 1px solid $blau;
-    background: $blau;
+    border: 1px solid $blau2;
+    background: $blau2;
     color: white;
     font-size: $bigger;
     text-decoration: none;
@@ -187,7 +187,7 @@ body.landing {
   
   .linkitem p a:hover  {
     background-color: white;
-    color: $blau;
+    color: $blau2;
     
    }
   
@@ -248,8 +248,14 @@ body.landing h1 , body.landing .contmain p {
 }
 
 .contright {
-  background-color: $blau;
-  color: white;
+  background-color: $footer;
+  color: black;
+  border: 1px solid $blau;
+  
+}
+
+.contright h1 {
+  color: $blau;
 }
 
  @include breakpoint(phone) {
@@ -284,7 +290,7 @@ body.landing h1 , body.landing .contmain p {
   margin: 20px 0;
   font-style: italic;
   color: #aaa;
-  padding: 3px;
+  padding: 6px;
    @include breakpoint(desktop) {width: 182px;}
     @include breakpoint(phone) {width: 75%;}
 }
@@ -293,10 +299,10 @@ body.landing h1 , body.landing .contmain p {
  // vertical-align: bottom;
     font-family: "open_sansbold", Arial, sans-serif;
  color: white;
- background-color: $blau;
+ background-color: $blau2;
   border: 0;
   margin: 0;
-  padding: 0;
+    padding: 8px 14px 10px 8px;
   font-size: $default;
   cursor: pointer;
   transition: all 0.3s;
@@ -313,8 +319,9 @@ span.tsubmit {
 .newsletter button.submit:after {
   content: " \f054";
  position: relative;
- top: 2px;
- font-size: 20px;
+ top: 1px;
+ left: 4px;
+ font-size: 13px;
  font-family: "FontAwesome"; 
 }
 
@@ -322,20 +329,21 @@ span.tsubmit {
   text-decoration: none;
   font-family: "open_sansbold", Arial, sans-serif;
   transition: all 0.3s;
-  border: 1px solid $blau;
+  border: 1px solid $blau2;
 }
 
 .slider p a:hover {
   background-color: white;
-  color: $blau;
+  color: $blau2;
 }
 
 
 .slider p a:after {
     content: " \f054";
  position: relative;
- top: 2px;
- font-size: 20px;
+ top: 1px;
+ left: 4px;
+ font-size: 13px;
  font-family: "FontAwesome"; 
 }
 
@@ -347,10 +355,13 @@ span.tsubmit {
 }
 
 .contright a {
+  background-color: $blau2;
+padding: 8px 14px 10px 8px;
   color: white;
   position: relative;
+  display: inline-block;
+  margin: 10px 0 ;
   top: 10px;
-  margin-bottom: 10px;
   text-decoration: none;
   font-family:"open_sansbold";
    transition: all 0.3s;
@@ -363,8 +374,9 @@ span.tsubmit {
 .contright a:after {
  content: " \f054";
  position: relative;
- top: 2px;
- font-size: 20px;
+ top: 1px;
+ left: 4px;
+ font-size: 13px;
  font-family: "FontAwesome"; 
 }
 
@@ -372,10 +384,11 @@ span.tsubmit {
  * Bottom Landing
  */
 .bottom {
-  background-color: $blau;
-  color: white;
+  background-color: $footer;
+  color: black;
   font-size: $small;
   padding: 40px 0;
+  border-top: 1px solid $blau;
 }
 
 .botmid {
@@ -386,6 +399,11 @@ span.tsubmit {
    @include breakpoint(phone) {
      margin: 0 0 20px 0 ;
    }
+}
+
+.botleft img {
+ width: 82px;
+ height: auto;  
 }
 
 .logo_bottom {
@@ -431,14 +449,14 @@ span.data {
  * Footer Landing
  */
 .footer {
-  background-color: $blau;
-  color: white;
+  background-color: $footer;
+  color: black;
   font-size: $small;
   @include breakpoint(desktop) {padding-bottom: 20px;}
 }
 
 .footer .container {
-  border-top: 1px solid white;
+  border-top: 1px solid $blau;
 } 
 
 .footer div {
@@ -446,14 +464,14 @@ span.data {
 }
 
 .footer a {
-  color : white;
+  color : black;
   text-decoration: none;
   transition: all 0.3s;
 
 }
 
 .footer a:hover {
-  color: #ccc;
+  color: #555;
 }
 
 .footright {

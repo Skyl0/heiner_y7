@@ -97,7 +97,7 @@ hr {
 }
 
 .bottom a, a[href^=tel] {
-  color:#FFF; text-decoration:none;
+  color:black; text-decoration:none; // $blau2
 }
 
 p {
@@ -138,8 +138,9 @@ p {
 .contmain p.bodytext a.button:after {
    content: " \f054";
  position: relative;
- top: 2px;
- font-size: 20px;
+ top: 1px;
+ left: 4px;
+ font-size: 13px;
  font-family: "FontAwesome"; 
 } 
 

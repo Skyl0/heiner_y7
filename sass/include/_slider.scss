@@ -36,7 +36,7 @@
   
   p a {
     color: white;
-    background: $blau;
+    background: $blau2;
     padding: 10px;
     margin: 10px 0 ;
     display: inline-block;
@@ -68,6 +68,7 @@
     position: relative;
     left: 50%;
     margin-left: -25%;
+    padding-top: 10px;
   }
 }
 

@@ -36,7 +36,9 @@
     @include breakpoint(desktop) {
       left: 0px;
     }
-    background: $blau;
+    height: 40px;
+    background: $blau2;
+    border: 1px solid $blau2;
     color: $weiss;
     //font-weight: bold;
     font-family: "OpenSans", Arial, sans-serif;
