@@ -49,10 +49,25 @@ img.nonfix {
 img.fix {
   display: none;
   position: absolute;
-  top: 2px;
+  top: 5px;
   width: 443px;
   height: 50px;
 }
+
+img.nonfixcity {
+  position: absolute;
+  width: 252px;
+  height: 87px;
+  
+}
+img.fixcity {
+  display: none;
+  position: absolute;
+  top: 5px;
+  width: 372px;
+  height: 50px;
+}
+
 
 img.city {
   width: 233px !important;

@@ -11,6 +11,22 @@
   }
   margin: 0 auto;
 }
+/*
+ * Image CE
+ */
+div.csc-textpic-border img {
+  border: 1px solid $blau !important;
+}
+
+caption.csc-textpic-caption {
+  margin: 5px 0;
+  font-size: 16px;
+  font-family: "open_sansregular", Arial, sans-serif;
+}
+
+table.contenttable td {
+  line-height: 150%;
+}
 
 /*
  * Top Landing
@@ -22,7 +38,7 @@
   border-top: $topborder;
   color: $blau;
   box-shadow: 0px 0px 5px #000;
-  z-index: 999;
+  z-index: 5001;
 position: relative;
 }
 

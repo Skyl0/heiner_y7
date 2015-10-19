@@ -250,9 +250,11 @@ jQuery(document).ready(function($)  {
 	$('.slider .bxslider .csc-textpic-text').addClass('container');
 	
 	var pages = $('div.bx-pager-item').length;
-	
+	console.log ("Pages" + pages);
 	if (pages < 2) {
 		$('div.bx-pager-item').hide();
 	}	
+	
+	// $("input#field-11").after(" Test");
 
 });

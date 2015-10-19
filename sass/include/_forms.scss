@@ -42,11 +42,11 @@
     border: 1px solid $blau2;
     color: $weiss;
     //font-weight: bold;
-    font-family: "open_sansbold", Arial, sans-serif;
+    font-family: "open_sansregular", Arial, sans-serif;
     box-sizing: border-box;
   }
   
-    input[type="submit"]:after {
+     input[type="submit"]:after {
        content: " \f054";
  position: relative;
  top: 0px;
