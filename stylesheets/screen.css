@@ -2453,7 +2453,7 @@ tr td {
  */
 /* line 5, ../sass/include/_dropdown.scss */
 .dropdown {
-  cursor: hand;
+  cursor: pointer;
 }
 
 /* line 9, ../sass/include/_dropdown.scss */
@@ -2468,8 +2468,9 @@ tr td {
 }
 
 /* line 19, ../sass/include/_dropdown.scss */
-.open:after {
+.open h1:after {
   transform: rotate(180deg);
+  content: " \f077" !important;
 }
 
 /* line 42, ../sass/screen.scss */

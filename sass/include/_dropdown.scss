@@ -3,7 +3,7 @@
  */
 
 .dropdown {
-  cursor: hand;
+  cursor: pointer;
 }
 
 .dropdown h1:after {
@@ -16,6 +16,7 @@
  transition: all 0.5s;
 }
 
-.open:after {
+.open h1:after {
   transform: rotate(180deg);
+    content: " \f077" !important;
 }
