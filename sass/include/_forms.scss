@@ -34,6 +34,7 @@
  //   @include breakpoint(desktop) { width: auto; }
    //  @include breakpoint(phone) { width: 100%; }
     position: relative;
+    padding: 8px;
     @include breakpoint(desktop) {
       left: 0px;
     }
@@ -46,7 +47,7 @@
     box-sizing: border-box;
   }
   
-     input[type="submit"]:after {
+  input[type="submit"]:after {
        content: " \f054";
  position: relative;
  top: 0px;
@@ -60,9 +61,10 @@
   }
   
   strong {
-    display: inline-block;
+    width: 150%;
+    display: block;
     padding: 8px;
-    background: $lightgray2;
+    background: #f9f9f9;
     position: relative;
    // height: 30px;
     margin-bottom: 5px;
@@ -72,7 +74,7 @@
     font-style: italic;
     font-size: $smaller; 
     text-transform: none;
-    box-shadow: 2px 2px 5px rgba(0,0,0,0.8);
+//    box-shadow: 2px 2px 5px rgba(0,0,0,0.8);
   }
   
 }

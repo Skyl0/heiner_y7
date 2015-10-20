@@ -80,7 +80,17 @@ jQuery(document).ready(function($)  {
 	        $('html, body').animate({scrollTop:0}, 'slow');
 	        return false;
 	    });
+/**
+ *Dropdown 
+ */
+//$('.dropdown p').hide();
 
+$('.dropdown').click(function()
+{
+	
+	$(this).find('p').slideToggle();
+	$(this).toggleClass('open');
+});
 	
 	/**
 	 * Menu Fix
@@ -157,7 +167,7 @@ jQuery(document).ready(function($)  {
 	});
 	
 
-
+	//$('input[type=submit]').addClass('submit-button');
 
 	
 	var slider = $('.slider');
@@ -198,6 +208,8 @@ jQuery(document).ready(function($)  {
 		useCSS : 'false',
 		preloadImages: 'all',
 		infiniteLoop: 'true',
+		auto: 'true',
+		speed: 4000,
 		pager: 'false',
 		//preventDefaultSwipeY: 'true',
 		onSlideBefore: function(){

@@ -24,8 +24,53 @@ caption.csc-textpic-caption {
   font-family: "open_sansregular", Arial, sans-serif;
 }
 
+/* 
+ * More
+ */
 table.contenttable td {
   line-height: 150%;
+}
+
+.lilienlogo {
+  width: 240px;
+  margin-bottom: 5px;
+}
+
+.menuslider_wo {
+  display: none;
+}
+/*
+ * Kontakt
+ */
+
+div.csc-mailform ol {
+  margin-top : 20px;
+}
+
+.csc-form-confirmation ol {
+  margin: 0 !important; padding: 0 !important;
+}
+
+.csc-form-confirmation ol li {
+  margin: 10px 0 !important; padding: 0 !important;
+}
+/*
+ * 2 Spalten
+ */
+
+ @include breakpoint (desktop) {
+   .col2_left, .col2_right {
+    width: 47.5%;
+    float: left;
+   }
+   
+   .col2_left {
+    padding-right: 2.5%;
+   }
+   
+    .col2_right {
+    padding-left: 2.5%;
+   }
 }
 
 /*
@@ -192,7 +237,7 @@ body.landing {
     position: relative;
     width: 200px;
     padding: 10px;
-    border: 1px solid $blau2;
+ //   border: 1px solid $blau2;
     background: $blau2;
     color: white;
     font-size: $bigger;
@@ -201,11 +246,6 @@ body.landing {
     transition: all 0.3s;
   }
   
-  .linkitem p a:hover  {
-    background-color: white;
-    color: $blau2;
-    
-   }
   
   .filler {
     position: absolute;
@@ -263,11 +303,11 @@ body.landing h1 , body.landing .contmain p {
   margin: 20px 0 ;
 }
 
-.contright {
-  background-color: $footer;
+.contborder {
+  background-color: #ebebeb;
   color: black;
-  border: 1px solid $blau;
-  
+// border: 1px solid $blau;
+  margin-bottom: 20px;
 }
 
 .contright h1 {
@@ -283,7 +323,7 @@ body.landing h1 , body.landing .contmain p {
 .content .grid-3 {
   padding: 0 !important;
 }
-.contright {
+.contborder {
   margin-top: 10px;
    @include breakpoint(phone) { 
      position: relative;
@@ -291,7 +331,7 @@ body.landing h1 , body.landing .contmain p {
    }
 }
 
-.contright > div {
+.contborder > div {
   border-bottom: 1px solid white;
     padding: 20px 24px 40px 24px;
     margin: 0;
@@ -324,9 +364,10 @@ body.landing h1 , body.landing .contmain p {
   transition: all 0.3s;
 }
 
-.newsletter button.submit:hover {
-  color: $blau;
-  background-color: white;
+.newsletter button.submit:hover, .contmain p.bodytext a.button:hover, input[type="submit"]:hover,  body.landing .linkitem p a:hover,
+.slider p a:hover  { 
+  color: white;
+  background-color: $blau;
 }
 
 span.tsubmit {
@@ -347,11 +388,6 @@ span.tsubmit {
   font-family: "open_sansbold", Arial, sans-serif;
   transition: all 0.3s;
   border: 1px solid $blau2;
-}
-
-.slider p a:hover {
-  background-color: white;
-  color: $blau2;
 }
 
 
@@ -386,8 +422,8 @@ padding: 8px 14px 10px 8px;
 }
 
 .contright a:hover {
-  color: $blau;
-  background-color: white;
+  color: white;
+  background-color: $blau;
 }
 
 .contright a:after {
@@ -403,11 +439,11 @@ padding: 8px 14px 10px 8px;
  * Bottom Landing
  */
 .bottom {
-  background-color: $footer;
-  color: black;
+  background-color: $blau;
+  color: white;
   font-size: $small;
   padding: 40px 0;
-  border-top: 1px solid $blau;
+//  border-top: 1px solid $blau;
 }
 
 .botmid {
@@ -468,14 +504,14 @@ span.data {
  * Footer Landing
  */
 .footer {
-  background-color: $footer;
-  color: black;
+  background-color: $blau;
+  color: white;
   font-size: $small;
   @include breakpoint(desktop) {padding-bottom: 20px;}
 }
 
 .footer .container {
-  border-top: 1px solid $blau;
+  border-top: 1px solid white;
 } 
 
 .footer div {
@@ -483,7 +519,7 @@ span.data {
 }
 
 .footer a {
-  color : black;
+  color : white;
   text-decoration: none;
   transition: all 0.3s;
 

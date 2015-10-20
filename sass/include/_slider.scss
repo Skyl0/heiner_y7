@@ -210,8 +210,8 @@
   }
   
   .bx-wrapper .bx-pager.bx-default-pager a {
-    background: #666;
-    border: 2px solid #666;
+    background: $blau2;
+    border: 2px solid $blau2;
     text-indent: -9999px;
     display: block;
     width: 16px;
@@ -232,7 +232,7 @@
     }
     
     a.active {
-      background: $schwarz;
+      background: $blau;
       border: 2px solid $blau;
       opacity: 0.8;
     }
