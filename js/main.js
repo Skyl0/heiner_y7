@@ -8,6 +8,14 @@ jQuery(document).ready(function($)  {
 		document.form.submit();
 	});
 	
+	
+	// Tabellen PDF Icons
+	/*
+	$('table.preisliste a').each( function() {
+		 var text = $(this).text();
+    	//$(this).text(text.replace('PDF', '<i class="fa fa-file-pdf-o"></i>'));
+    	$(this).text(text.replace('PDF', '&#xf1c1;'));  
+	});*/
 		
 	
 	// Newsletter Focus on Blur
@@ -106,8 +114,9 @@ $('.dropdown').click(function()
 		preloadImages: 'all',
 		infiniteLoop: 'true',
 		auto: 'true',
-		speed: 4000,
-		pager: 'false',
+		speed: 1000,
+		pager: 'true',
+		responsive: 'true',
 		//preventDefaultSwipeY: 'true',
 		onSlideBefore: function(){
 		 // animateContainer();
@@ -236,14 +245,15 @@ $('.dropdown').click(function()
 		preloadImages: 'all',
 		infiniteLoop: 'true',
 		auto: 'true',
-		speed: 4000,
-		pager: 'false',
+		speed: 1000,
+		pager: true,
 		//preventDefaultSwipeY: 'true',
 		onSlideBefore: function(){
 		 // animateContainer();
 		},
 		onSliderLoad: function() {
 			resizeImage(); 
+			checkPager();
 		//	setTimeout(resizeImage,10);		
 		}
 		
@@ -288,12 +298,13 @@ $('.dropdown').click(function()
 
 	$('.slider .bxslider .csc-textpic-text').addClass('container');
 	
-	var pages = $('div.bx-pager-item').length;
-	console.log ("Pages" + pages);
-	if (pages < 2) {
-		$('div.bx-pager-item').hide();
-	}	
-	
+	function checkPager() {
+		var pages = $('div.bx-pager-item').length;
+		console.log ("Pages" + pages);
+		if (pages < 2) {
+			$('div.bx-pager-item').hide();
+		}	
+	}
 	// $("input#field-11").after(" Test");
 
 });

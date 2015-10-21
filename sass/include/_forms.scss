@@ -21,6 +21,7 @@
       @include breakpoint(phone) {width: 100%;}
       -webkit-appearance: none;
       box-sizing: border-box;
+      margin: 5px 0 ;
   }
   
   input[type="text"] {
@@ -34,27 +35,36 @@
  //   @include breakpoint(desktop) { width: auto; }
    //  @include breakpoint(phone) { width: 100%; }
     position: relative;
-    padding: 8px;
+    padding: 8px 30px 8px 8px;
     @include breakpoint(desktop) {
       left: 0px;
     }
     height: 40px;
-    background: $blau2;
+    background-color: $blau2;
+    background-image: url('../images/fa-chevron-right.png');
+    background-repeat: no-repeat;
+    background-position: 90% 52%;
     border: 1px solid $blau2;
     color: $weiss;
     //font-weight: bold;
     font-family: "open_sansregular", Arial, sans-serif;
     box-sizing: border-box;
+    transition: all 0.4s;
   }
   
-  input[type="submit"]:after {
-       content: " \f054";
- position: relative;
- top: 0px;
- left: 4px;
- font-size: 13px;
- font-family: "FontAwesome"; 
-    }
+  .csc-form-confirmation-false input[type="submit"] {
+  //  padding: 8px 36px 8px 8px !important;
+    background-position: 93% 52% !important;
+   }
+  
+  .csc-form-8 {
+    overflow: visible !important;
+  }
+  
+  
+  input[type="submit"]:hover {
+    background-color: $blau;
+  }
   
   label {
     position: relative;
@@ -63,15 +73,15 @@
   strong {
     width: 150%;
     display: block;
-    padding: 8px;
-    background: #f9f9f9;
+    padding: 7px 5px;
+    background: #ebebeb;
     position: relative;
    // height: 30px;
     margin-bottom: 5px;
-    top: 3px;
+    top: 5px;
     //left: 5px;
     color: $blau;
-    font-style: italic;
+    //font-style: italic;
     font-size: $smaller; 
     text-transform: none;
 //    box-shadow: 2px 2px 5px rgba(0,0,0,0.8);

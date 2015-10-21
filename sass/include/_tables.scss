@@ -27,3 +27,18 @@ tr td {
   border-right: 5px solid white;
   border-left: 0;
 }
+
+table.preisliste {
+  font-size: 15px;
+  
+  tbody .td-3, tbody .td-2, tbody .td-1{
+    letter-spacing: -0.07em;
+  }
+  
+  a.download:before {
+    text-align: center;
+    font-size: 24px;
+    content: "\f1c1 ";
+    font-family: "FontAwesome";
+  }
+}
