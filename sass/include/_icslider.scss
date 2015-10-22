@@ -1,4 +1,4 @@
-.icslider-wrapper {
+.content {
   /**
  * BxSlider v4.1.2 - Fully loaded, responsive content slider
  * http://bxslider.com
@@ -25,17 +25,18 @@
 .bx-wrapper img {
   max-width: 100%;
   display: block;
+  height: auto;
 }
 
 /** THEME
 ===================================*/
 
 .bx-wrapper .bx-viewport {
-  -moz-box-shadow: 0 0 5px #ccc;
-  -webkit-box-shadow: 0 0 5px #ccc;
-  box-shadow: 0 0 5px #ccc;
-  border:  5px solid #fff;
-  left: -5px;
+ // -moz-box-shadow: 0 0 5px #ccc;
+ // -webkit-box-shadow: 0 0 5px #ccc;
+//  box-shadow: 0 0 5px #ccc;
+//  border:  5px solid #fff;
+ // left: -5px;
   background: #fff;
   
   /*fix other elements on the page moving (on Chrome)*/
@@ -69,6 +70,7 @@
 /* PAGER */
 
 .bx-wrapper .bx-pager {
+  display: none;
   text-align: center;
   font-size: .85em;
   font-family: Arial;
@@ -104,16 +106,20 @@
 
 /* DIRECTION CONTROLS (NEXT / PREV) */
 
-.bx-wrapper .bx-prev {
-  left: 10px;
-  background: url(images/controls.png) no-repeat 0 -32px;
-}
+/*
 
-.bx-wrapper .bx-next {
-  right: 10px;
-  background: url(images/controls.png) no-repeat -43px -32px;
-}
-
+    .bx-wrapper .bx-prev:before {
+      //position: absolute;
+      content: "\f053";
+    //  padding-left: 10px;
+     font-family: "FontAwesome";
+    }
+    
+    .bx-wrapper .bx-next:before {
+      content: "\f054";
+   //    padding-right: 10px;    
+    }
+    
 .bx-wrapper .bx-prev:hover {
   background-position: 0 0;
 }
@@ -124,6 +130,7 @@
 
 .bx-wrapper .bx-controls-direction a {
   position: absolute;
+       font-family: "FontAwesome";
   top: 50%;
   margin-top: -16px;
   outline: 0;
@@ -132,7 +139,7 @@
   text-indent: -9999px;
   z-index: 9999;
 }
-
+*/
 .bx-wrapper .bx-controls-direction a.disabled {
   display: none;
 }

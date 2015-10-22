@@ -62,18 +62,21 @@
   }
   
   .container .inner {
-    width: 50%;
+    width: 520px;
     background: rgba(255,255,255,0.66);
     position: relative;
     left: 50%;
     padding: 0 20px;
-    margin-left: -25%;
-    padding: 10px;
+    margin-left: -260px;
+  //  padding: 10px;
     min-height: 80px;
+    @include breakpoint(desktop) {top: 110px;}
+
   }
   
   p.bodytext img {
-    width: 100% !important;
+    width: 500px !important;
+    margin-left: -250px;
   }
 }
 
@@ -195,9 +198,10 @@
 /* PAGER */
 .slider {
   
-  .sliderimg img {
+  .sliderimg .csc-textpic-imagewrap img {
     width: 100%;
-    height: auto;
+    //height: auto;
+    min-height: 480px;
   }
   .bx-wrapper .bx-pager {
     text-align: center;

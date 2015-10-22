@@ -92,12 +92,17 @@ jQuery(document).ready(function($)  {
  *Dropdown 
  */
 $('.dropdown p').hide();
+$('.dropdown h2').hide();
+$('.dropdown h3').hide();
+
 
 $('.dropdown').click(function()
 {
 	
 	$(this).find('p').slideToggle();
 	$(this).find('h2').slideToggle();
+	$(this).find('h3').slideToggle();
+	// TODO
 	$(this).toggleClass('open');
 });
 	
@@ -108,15 +113,16 @@ $('.dropdown').click(function()
 	
 	//$('.icslider .csc-textpic-imagecolumn').unwrap().unwrap().unwrap();
 	
-		var icslider = $('.icslider').bxSlider({
+		var icslider = $('.icslider-wrapper').bxSlider({
 		mode : 'fade',
-		useCSS : 'false',
+		useCSS : 'true',
 		preloadImages: 'all',
 		infiniteLoop: 'true',
 		auto: 'true',
 		speed: 1000,
-		pager: 'true',
+		pager: 'false',
 		responsive: 'true',
+		adaptiveHeight: 'false',
 		//preventDefaultSwipeY: 'true',
 		onSlideBefore: function(){
 		 // animateContainer();
@@ -207,7 +213,7 @@ $('.dropdown').click(function()
 
 	
 	var slider = $('.slider');
-	var	img = $('.slider img');
+	var	img = $('.slider .csc-textpic-imagewrap img');
 	
 	function resizeImage() {
 		var sliderratio = slider.width() / slider.height();
@@ -218,9 +224,9 @@ $('.dropdown').click(function()
 		img.each(function (index){
 			var imgwidth = $(this).actual( 'width' ) ;
 			var imgratio = imgwidth / $(this).actual( 'height' );;
-		//	console.log('ImgRatio('+index+'): ' + imgratio);
+			console.log('ImgRatio('+index+'): ' + imgratio);
 			var slideroffset = -0.5 * (imgwidth - sliderw);
-			//console.log("Slideroffset" + slideroffset);			
+			console.log("Slideroffset" + slideroffset);			
 				
 			if (imgratio > sliderratio) {
 				$(this).addClass("img_gt_slider");				
