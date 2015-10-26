@@ -91,15 +91,18 @@ jQuery(document).ready(function($)  {
 /**
  *Dropdown 
  */
+$('.dropdown table').hide();
 $('.dropdown p').hide();
+$('.dropdown ul').hide();
 $('.dropdown h2').hide();
 $('.dropdown h3').hide();
 
 
 $('.dropdown').click(function()
 {
-	
+	$(this).find('table').slideToggle();
 	$(this).find('p').slideToggle();
+	$(this).find('ul').slideToggle();
 	$(this).find('h2').slideToggle();
 	$(this).find('h3').slideToggle();
 	// TODO

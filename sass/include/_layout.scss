@@ -19,8 +19,9 @@ div.csc-textpic-border img {
 }
 
 caption.csc-textpic-caption {
-  margin: 5px 0;
+  margin: 10px 0;
   font-size: 16px;
+  line-height: 160%;
   font-family: "open_sansregular", Arial, sans-serif;
 }
 
@@ -71,6 +72,13 @@ div.csc-mailform ol {
     .col2_right {
     padding-left: 2.5%;
    }
+}
+
+.col2_right a.button, .col2_left a.button {
+  position: relative;
+  top: -33px;
+  left: 50% !important;
+  margin-left: -89px !important;
 }
 
 /*
@@ -526,7 +534,7 @@ span.data {
 }
 
 .footer a:hover {
-  color: #555;
+  color: $blau2 *1.5;
 }
 
 .footright {

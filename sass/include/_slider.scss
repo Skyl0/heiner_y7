@@ -1,6 +1,13 @@
 /**
  *   SLIDER OWN DEFINITIONS
  */
+  .bx-prev {
+   pointer: w-resize;
+  }
+  
+  .bx-next {
+    pointer: e-resize;
+  }
 
 .slider {
 //position: relative;
@@ -269,7 +276,8 @@
       transition: all 0.5s;
       //height: 500px;
       position: absolute;
-     color: $blau;
+  //  color: $blau;
+  color: white;
 
     }
     .bx-prev {
@@ -460,14 +468,14 @@
       transition: all 0.5s;
       //height: 500px;
       position: absolute;
-        -webkit-text-stroke: 2px $blau;
+//        -webkit-text-stroke: 2px $blau;
      color: white;
-     text-shadow:
+  /*   text-shadow:
          2px 3px 0 $blau,
        -1px -1px 0 $blau,  
         1px -1px 0 $blau,
         -1px 1px 0 $blau,
-         1px 1px 0 $blau;
+         1px 1px 0 $blau; */
     }
     .bx-prev {
       left: 5px;
