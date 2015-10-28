@@ -14,6 +14,16 @@
 /*
  * Image CE
  */
+
+.icslider-wrapper > div {
+  //padding: 0 0 20px 0 ;
+  line-height: 40px;
+}
+
+a.ic_lightbox {
+ // margin-bottom: 20px;
+}
+
 div.csc-textpic-border img {
   border: 1px solid $blau !important;
 }

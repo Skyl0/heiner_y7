@@ -12,7 +12,20 @@
     margin: 0 0 10px 0;
   }
   
+  .csc-mailform-field {
+    height: 36px;
+   position: relative;
+  }
+  
+  textarea {
+        width: 450px !important;
+  }
+  
   textarea, input[type] {
+            position: absolute;
+    left: 180px;
+    top: -4px;
+    
     border: 1px solid $blau;
   //  @include breakpoint(desktop) { padding: 5px; }
     padding: 3px;
@@ -21,15 +34,29 @@
       @include breakpoint(phone) {width: 100%;}
       -webkit-appearance: none;
       box-sizing: border-box;
-      margin: 5px 0 ;
+//      margin: 5px 0 ;
   }
   
   input[type="text"] {
-    margin-top: 5px;
+   // margin-top: 5px;
     box-sizing: border-box;
+    
+    position: absolute;
+    left: 180px;
+    width: 450px;
+     top: -4px;
+
+  }
+  
+  .needed {
+    position: relative;
+    top: 126px;
   }
   
   input[type="submit"] {
+    
+
+    top: 100px;
     -webkit-appearance: none;
     width: auto; 
  //   @include breakpoint(desktop) { width: auto; }
