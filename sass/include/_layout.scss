@@ -28,8 +28,22 @@ div.csc-textpic-border img {
   border: 1px solid $blau !important;
 }
 
+div.csc-textpic-intext-left-nowrap {
+  float: none;
+}
+
+.csc-textpic-intext-left-nowrap-210 .csc-textpic-text {
+  @include breakpoint(phone) {
+       margin-left: 0px !important;
+       
+      h2 {
+        clear: both;
+      }
+  }
+}
+
 div.csc-textpic-imagecolumn {
-  min-height: 250px;
+  min-height: 310px;
 }
 
 caption.csc-textpic-caption {
@@ -45,6 +59,14 @@ caption.csc-textpic-caption {
 table.contenttable td {
   line-height: 150%;
 }
+
+.ic_lightbox img {
+   @include breakpoint(phone) {
+       width: 100%;
+    height: auto;
+    box-sizing: border-box;
+  }
+  }
 
 .lilienlogo {
   @include breakpoint(phone) { width : 240px; position: relative; left: 20px; //margin-left: -120px;
@@ -401,7 +423,11 @@ body.landing h1 , body.landing .contmain p {
   color: #aaa;
   padding: 6px;
    @include breakpoint(desktop) {width: 182px;}
-    @include breakpoint(phone) {width: 100%;}
+    @include breakpoint(phone) {
+      width: 100%;
+      max-width: 300px;
+      display: block;
+      }
 }
 .newsletter button.submit {
   display: inline;
