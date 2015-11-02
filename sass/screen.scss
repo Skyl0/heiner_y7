@@ -62,6 +62,12 @@ $settings : (
   gutter-width : 40px
 ) );
 
+@include gridle_register_state ( smallest , (
+  max-width : 500px,
+  gutter-width : 40px
+) );
+
+
 // clear each classes :
 @include gridle_register_clear_each(2, left);
 @include gridle_register_clear_each(12, both);

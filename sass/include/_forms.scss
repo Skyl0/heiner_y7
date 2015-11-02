@@ -1,3 +1,11 @@
+/**
+ *   Forms
+ */
+
+#mailform {
+  margin-bottom: 135px;
+}
+
 .csc-mailform {
   
   label em {
@@ -13,18 +21,22 @@
   }
   
   .csc-mailform-field {
-    height: 36px;
+    @include breakpoint(desktop) {height: 40px;}
+    @include breakpoint(phone) { height: 60px;}
    position: relative;
   }
   
   textarea {
-        width: 450px !important;
+        @include breakpoint(desktop) {width: 450px !important;}
+        @include breakpoint(phone) {width: 100% !important;}
   }
   
   textarea, input[type] {
+          @include breakpoint(desktop) {
             position: absolute;
-    left: 180px;
-    top: -4px;
+            left: 180px;
+            top: -4px;
+          }
     
     border: 1px solid $blau;
   //  @include breakpoint(desktop) { padding: 5px; }
@@ -40,11 +52,19 @@
   input[type="text"] {
    // margin-top: 5px;
     box-sizing: border-box;
-    
+    @include breakpoint(desktop) {
     position: absolute;
     left: 180px;
     width: 450px;
      top: -4px;
+     
+     }
+     
+     @include breakpoint(phone) {
+      width: 100%; 
+      
+       
+     }
 
   }
   
@@ -94,6 +114,9 @@
   }
   
   label {
+    @include breakpoint(phone) {
+      line-height: 30px;
+    }
     position: relative;
   }
   

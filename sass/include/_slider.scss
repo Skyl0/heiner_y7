@@ -8,6 +8,12 @@
   .bx-next {
     pointer: e-resize;
   }
+  
+ .slider {
+  @media (max-width: 470px) {
+    display: none !important;
+    } 
+ }
 
 .slider {
 //position: relative;
@@ -73,17 +79,25 @@
     background: rgba(255,255,255,0.66);
     position: relative;
     left: 50%;
-    padding: 0 20px;
+    //padding: 0 20px;
     margin-left: -260px;
   //  padding: 10px;
     min-height: 80px;
-    @include breakpoint(desktop) {top: 110px;}
+    @include breakpoint(desktop) {top: 158px;}
+    @include breakpoint(phone) {top: 108px;}
 
   }
   
   p.bodytext img {
-    width: 500px !important;
-    margin-left: -250px;
+    position: static;
+  @include breakpoint(desktop) {  width: 500px !important;
+   // margin-left: -250px;
+    }
+    
+    @media (max-width: 625px) {
+      width: 100%;
+      height: auto;
+      }
   }
 }
 
@@ -208,7 +222,7 @@
   .sliderimg .csc-textpic-imagewrap img {
     width: 100%;
     height: auto !important;
-    min-height: 480px;
+    min-height: $sliderheight;
   }
   .bx-wrapper .bx-pager {
     text-align: center;
@@ -276,8 +290,8 @@
       transition: all 0.5s;
       //height: 500px;
       position: absolute;
-  //  color: $blau;
-  color: white;
+    color: $blau;
+  //color: white;
 
     }
     .bx-prev {
@@ -469,7 +483,7 @@
       //height: 500px;
       position: absolute;
 //        -webkit-text-stroke: 2px $blau;
-     color: white;
+     color: $blau;
   /*   text-shadow:
          2px 3px 0 $blau,
        -1px -1px 0 $blau,  
@@ -518,7 +532,7 @@
   	margin-top: -16px;
   	outline: 0;
   	//width: 32px;
-  	height: 3em;
+  	height: 1em;
   	//text-indent: -9999px;
   	z-index: 4000;
   }

@@ -15,7 +15,8 @@
 /** RESET AND LAYOUT
 ===================================*/
 .bx-wrapper .bx-controls-direction a{
-  top: 50% !important;   
+  top: 50% !important;  
+  margin-top: -1em; 
 } 
 
 .bx-wrapper {
@@ -29,6 +30,8 @@
   max-width: 100%;
   display: block;
   height: auto;
+  // max-height: 600px;
+ // width: auto;
 }
 
 /** THEME

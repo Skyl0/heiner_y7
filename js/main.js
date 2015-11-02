@@ -118,22 +118,16 @@ $('.dropdown').click(function()
 	
 		var icslider = $('.icslider-wrapper').bxSlider({
 		mode : 'fade',
-		useCSS : 'true',
+		useCSS : false,
+		adaptiveHeight: false,
 		preloadImages: 'all',
-		infiniteLoop: 'true',
-		auto: 'true',
+		infiniteLoop: true,
+		auto: true,
 		speed: 1000,
-		pager: 'false',
-		responsive: 'true',
-		adaptiveHeight: 'false',
+		pager: false,
+		responsive: true
+		
 		//preventDefaultSwipeY: 'true',
-		onSlideBefore: function(){
-		 // animateContainer();
-		},
-		onSliderLoad: function() {
-		//	resizeImage(); 
-		//	setTimeout(resizeImage,10);		
-		}
 		
 	});	
 	
@@ -250,10 +244,10 @@ $('.dropdown').click(function()
 	
 	var bxslider = $('.slider .bxslider').bxSlider({
 		mode : 'fade',
-		useCSS : 'false',
+		useCSS : false,
 		preloadImages: 'all',
-		infiniteLoop: 'true',
-		auto: 'true',
+		infiniteLoop: true,
+		auto: true,
 		speed: 1000,
 		pager: true,
 		//preventDefaultSwipeY: 'true',
