@@ -74,8 +74,8 @@ ul.mmcity li a {
       height: $menuheight + 20;
      @include breakpoint(desktop) { display:block; }
      @include breakpoint(phone) { display: none; }
-      left: -50%;
-      width: 50%;
+      left: -100%;
+      width: 100%;
      background-color: $blau2; // background: rgba(38,47,128,0.66); 
     }
     
@@ -85,7 +85,7 @@ ul.mmcity li a {
       @include breakpoint(desktop) { display:block; }
      @include breakpoint(phone) { display: none; }
       left: 960px;
-      width: 50%;
+      width: 100%;
      background-color: $blau2; // background: rgba(38,47,128,0.66); 
     }
     
@@ -138,16 +138,21 @@ ul.mmcity li a {
     @include breakpoint(phone) {
       display: block;
       position: relative;
-      height: $topheight;
+  //    height: $topheight;
     }
 }
 
 
     
     .burger {
-      position: absolute;
-      top: 24px;
-      right: 20px;
+      cursor: pointer;
+      
+     position: relative;
+    //  top: 24px;
+      //right: 20px;
+   
+       
+          right: 0;
      // background: white;
       width: 40px;
       margin: 20px 0;

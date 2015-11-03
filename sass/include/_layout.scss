@@ -3,6 +3,7 @@
  */
 
 .container {
+  position: relative;
  @include breakpoint(desktop) {
   width: 960px;
   }
@@ -11,6 +12,18 @@
   }
   margin: 0 auto;
 }
+/** 
+ *   LOGO
+ */
+
+ .grid-smallest-3 {
+   position: absolute !important;
+   width: auto !important;
+   right: 0px;
+   top: 50%;
+   margin-top: -35px;
+ } 
+ 
 /*
  * Image CE
  */
@@ -22,6 +35,11 @@
 
 a.ic_lightbox {
  // margin-bottom: 20px;
+ display: inline-block;
+}
+
+.cityliving > div {
+  text-align: center;
 }
 
 div.csc-textpic-border img {
@@ -99,7 +117,8 @@ div.csc-mailform ol {
  * 2 Spalten
  */
 
- @include breakpoint (desktop) {
+ //@include breakpoint (desktop) {
+   @media (min-width: 675px) {
    .col2_left, .col2_right {
     width: 47.5%;
     float: left;
@@ -112,21 +131,29 @@ div.csc-mailform ol {
     .col2_right {
     padding-left: 2.5%;
    }
+   .col2_right a.button, .col2_left a.button {
+      position: relative;
+      top: -33px;
+      left: 50% !important;
+      margin-left: -89px !important;
+    }
 }
 
-.col2_right a.button, .col2_left a.button {
-  position: relative;
-  top: -33px;
-  left: 50% !important;
-  margin-left: -89px !important;
-}
+   .col2_right a.button, .col2_left a.button {
+      position: relative;
+      top: -33px;
+      left: 150px !important;
+      margin-left: -89px !important;
+    }
+
+
 
 /*
  * Top Landing
  */
 
 .top {
-  height: $topheight;
+ // @include breakpoint(desktop) {height: $topheight;}
  // transition: height 0.5s;
   border-top: $topborder;
   color: $blau;
@@ -137,14 +164,21 @@ div.csc-mailform ol {
 
 .logocontainer {
   position: relative;
+    @media (max-width:390px) {
+      img {
+        //top: 33%;
+        margin: auto 0;
+        //margin-top: -25% ;
+        width: 100% !important;
+        height: auto !important;
+      }
+    }
 }
 
 .logo {
   height: 87px;
   width: 283px; 
-  @media (max-width:390px) {
-    width: 87px !important;
-  }
+   
   display: block;
   background: url('../images/heiner_top.png') no-repeat left center;
 }
@@ -234,7 +268,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 }
 
 .contmain img {
-  @media (max-width: 460px) {
+  @media (max-width: 640px) {
     width: 100%;
   height: auto;
   }

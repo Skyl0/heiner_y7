@@ -41,28 +41,28 @@ body.scrollfixed .logo {
 
 
 img.nonfix {
-  position: absolute;
+  //position: absolute;
   width: 259px;
   height: 87px;
   
 }
 img.fix {
   display: none;
-  position: absolute;
+ // position: absolute;
   top: 5px;
   width: 443px;
   height: 50px;
 }
 
 img.nonfixcity {
-  position: absolute;
+ // position: absolute;
   width: 252px;
   height: 87px;
   
 }
 img.fixcity {
   display: none;
-  position: absolute;
+ // position: absolute;
   top: 5px;
   width: 372px;
   height: 50px;
@@ -86,11 +86,11 @@ body.scrollfixed img.fix {
 body.scrollfixed {
   
   .burger {
-    position: absolute;
-    top: 0px;
-    right: 20px;
+  //  position: absolute;
+   // top: 0px;
+  //  right: 20px;
     width: 30px;
-    margin: 10px 0;
+ //   margin: 10px 0;
   }
   
   .burger div {

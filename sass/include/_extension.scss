@@ -34,15 +34,49 @@
   @include breakpoint(desktop) { height: 60px !important; }
 }
 
+.tx-y7-simpleelements .slider-img img {
+  width: 200px !important;
+  // max-height: 100px !important;
+}
 .separator {
   height: 1px;
   background: $blau;
-  margin: 40px 0 ;
+  margin: 50px 0 25px 0;
    @include breakpoint(desktop) {width: 643px;}
     @include breakpoint(phone) {width: 100%;}
 }
 
+.tx-y7-simpleelements a.download img {
+  border: 1px solid $blau;  
+}
 
+.tx-y7-simpleelements .slider-img a {
+  max-height: 100px;
+}
+
+
+
+ table.contenttable {
+
+     td {
+      @include breakpoint(phone) {
+        width: 100%;
+        float: left;      
+        
+      } 
+         
+        padding: 10px 0 10px 0;
+    }
+}
+
+.tx-y7-simpleelements table.contenttable {
+   border-spacing: 0 !important;  
+}
+
+.y7-se-images .bx-controls-direction a {
+  top: 50% !important;
+  margin-top: -24px !important;
+}
 
 .y7-se-text {
   display: block;
@@ -61,6 +95,7 @@
     margin-left: -200px;
     position: relative;
     left: 50%;
+    width: auto !important;
   }
   
   .y7-se-images {

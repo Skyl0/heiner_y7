@@ -120,6 +120,10 @@ $('.dropdown').click(function()
 		mode : 'fade',
 		useCSS : false,
 		adaptiveHeight: false,
+		minSlides: 1,
+		maxSlides: 1,
+		slideWidth: 600,
+  		slideMargin: 0,
 		preloadImages: 'all',
 		infiniteLoop: true,
 		auto: true,
@@ -131,6 +135,8 @@ $('.dropdown').click(function()
 		
 	});	
 	
+	$('.cityliving').parent().addClass('cl-viewport');
+	
 	/**
 	 * Menu Fix
 	 */
@@ -140,8 +146,8 @@ $('.dropdown').click(function()
 		resizeImage();
 		//getHeightFixed();
 		
-		if ($(window).width() >= 959) {
-			$('.menu').slideDown('fast');
+		if ($('html').width() >= 945) {
+			$('.menu').show();
 		} else {
 			$('.menu').hide();
 		}
@@ -158,7 +164,7 @@ $('.dropdown').click(function()
     function checkScrollPosition() {
     	var y = $(document).scrollTop();
     	//console.log("Scroll at Y: " + y);
-	    if (y > 0 && !isTouchDevice) //  &&  $(window).width() >= 959 ) 
+	    if (y > 0 && !isTouchDevice  &&  $(window).width() >= 700 ) 
 	    {	
 	        $('body').addClass('scrollfixed');
 	       
@@ -274,10 +280,10 @@ $('.dropdown').click(function()
 			
 			$(this).bxSlider({
 			minSlides: 1,
-			maxSlides: 20,
+			maxSlides: 2,
 			moveSlides: 1,
 			//easing: 'ease',
-			slideWidth: 133,
+			slideWidth: 200,
 			slideMargin: 0,
 			infiniteLoop: false,
 			hideControlOnEnd: true,
